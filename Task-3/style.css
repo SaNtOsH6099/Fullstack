@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(195, 156, 84);
+  height: 100vh;
+}
+.head {
+  color: darkblue;
+}
+.second {
+  color: red;
+}
+#bglime {
+  background-color: lime;
+}
+p {
+  color: white;
+}
+#para {
+  color: green;
+}
+.paragraph {
+  color: black;
+  font-size: xx-large;
+}
+ul > li {
+  color: black;
+}
+ul > li:first-child > a {
+  background-color: green;
+  color: white;
+}
+ul > li:nth-child(2) > a {
+  background-color: rgb(188, 105, 221);
+  color: white;
+}
+
+ol > li {
+  color: white;
+}
+ol > li:nth-child(2) {
+  color: rgb(22, 92, 189);
+}
+
+ol > li:nth-child(3) {
+  color: red;
+}
