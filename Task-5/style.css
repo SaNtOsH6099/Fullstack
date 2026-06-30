@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: rgb(39, 38, 38);
+}
+nav {
+  background-color: rgb(16, 15, 15);
+  position: relative;
+}
+.navbar > li {
+  display: inline-block;
+  padding: 0.1rem 1rem;
+  font-size: 1.1rem;
+}
+.navbar {
+  padding: 1rem;
+  text-align: center;
+}
+.nav-items > a {
+  text-decoration: none;
+  color: rgb(193, 190, 190);
+}
+
+.logo-img {
+  height: 3rem;
+  position: absolute;
+  left: 2rem;
+  top: 0.4rem;
+}
+
+.user {
+  position: absolute;
+  right: 2rem;
+  top: 0.6rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(167, 189, 234, 0.181);
+  color: rgb(89, 117, 253);
+  border-radius: 5px;
+}
+.hero {
+  text-align: center;
+}
+.hero > div {
+  display: inline-block;
+  width: 45%;
+  vertical-align: middle;
+  text-align: start;
+}
+.description > * {
+  margin: 2rem 0;
+}
+.description h1 {
+  color: rgb(220, 213, 235);
+  line-height: 1.3;
+}
+.highlight {
+  color: rgb(74, 103, 250);
+}
+.description p {
+  color: rgb(193, 190, 190);
+}
+.btn-container {
+  text-align: center;
+}
+.btn {
+  padding: 1rem 3rem;
+  border: none;
+  background-color: rgb(74, 103, 250);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+.advertise-img {
+  width: 100%;
+  max-height: 80vh;
+}
+
+.btn:hover,
+.user:hover {
+  cursor: pointer;
+}
