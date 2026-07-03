@@ -249,6 +249,7 @@ body {
 .hamburger:focus {
   border: 2px solid rgb(0, 170, 255);
 }
+/* ----------Hover Effect--------------- */
 .btn:hover {
   background-color: rgb(92, 183, 226);
   transform: rotate(-10deg) scale(1.1);
