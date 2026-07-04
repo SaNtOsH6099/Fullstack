@@ -136,7 +136,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  border: 1px solid white;
+
   overflow: hidden;
 }
 .wrapper {
