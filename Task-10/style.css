@@ -148,7 +148,6 @@ body {
 .hero-img {
   width: 40vw;
   transform: translateX(25px);
-
   animation: rev-shrink 2s ease-in-out 1s infinite;
 }
 
