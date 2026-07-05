@@ -34,4 +34,3 @@ Make sure you have [Visual Studio Code](https://code.visualstudio.com/) installe
 2. **Install Live Server:** Jump to the Extensions panel (`Ctrl + Shift + X`), search for **Live Server** (by Ritwick Dey), and tap install.
 3. **Go Live:** \* Right-click anywhere within your `index.html` file and choose **Open with Live Server**.
    - Alternatively, activate the **Go Live** anchor in the bottom-right status tray of VS Code.
-4. **Observe the Animations:** Watch how the graphic containers smoothly accelerate, travel along their coordinate pathways, stretch elastically on impact, and loop perfectly through their operational cycles!
