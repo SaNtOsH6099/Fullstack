@@ -1,6 +1,6 @@
 # 🧺 Laundry Service Landing Page (Task 8)
 
-An advanced iteration of the premium laundry service landing page. This version maintains the sleek, modern dark theme while introducing a fully interactive, mobile-responsive sidebar navigation menu powered entirely by pure CSS.
+Added a mobile-responsive sidebar navigation using purely CSS
 
 🔗 **Live Demo:** [https://santosh6099.github.io/Fullstack/Task-8/](https://santosh6099.github.io/Fullstack/Task-8/)
 
@@ -8,23 +8,19 @@ An advanced iteration of the premium laundry service landing page. This version 
 
 ## ✨ Features
 
-- **Pure-CSS Interactive Mobile Menu:** Uses advanced CSS `:focus-within` selectors to create a fully operational slide-out navigation drawer on mobile viewports—**zero JavaScript required**.
-- **100% Fully Responsive Layout:** Seamless grid-to-column layout adaptation across ultra-wide desktops, tablets, and small phone interfaces (like the iPhone SE) using smart fluid break-points.
-- **Premium Aesthetic Dark Theme:** Designed with deep contrast layouts, crisp high-readability typography, and distinct call-to-action buttons optimized for maximum visual engagement.
-- **Component Isolation:** Features clean semantic HTML markup structure paired with modular, production-ready styling definitions.
+- **Pure-CSS Interactive Mobile Menu:** Uses advanced CSS `:focus` selectors to create a fully operational slide-out navigation drawer on mobile viewports.
+- **100% Fully Responsive Layout:** Seamless layout adaptation across ultra-wide desktops, tablets, and small phone interfaces .
 
 ---
 
 ## 🛠️ Built With
 
 - **HTML5** – Modern structural markup with accessible layout elements.
-- **CSS3** – Advanced layouts featuring custom media queries, state-driven animations, flexbox columns, and pseudo-class interactivity (`:focus-within`).
+- **CSS3** – Advanced layouts featuring custom media queries, state-driven animations, flexbox columns, and pseudo-class interactivity (`:focus`).
 
 ---
 
 ## 🚀 Getting Started (Run Locally)
-
-Want to run the code locally or tweak the interactive sidebar mechanics? Follow these steps:
 
 ### Prerequisites
 
