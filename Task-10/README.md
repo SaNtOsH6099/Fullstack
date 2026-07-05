@@ -1,6 +1,6 @@
 # 🧺 Laundry Service Landing Page (Task 10)
 
-A highly interactive and visually stunning iteration of the premium laundry service landing page. This version introduces advanced, multi-stage CSS3 keyframe graphics engine simulations to orchestrate intricate physics-based animations (like orbital rotation and elastic impact stretching).
+Added orbital rotation and stretch to the hero image
 
 🔗 **Live Demo:** [https://santosh6099.github.io/Fullstack/Task-10/](https://santosh6099.github.io/Fullstack/Task-10/)
 
@@ -8,10 +8,8 @@ A highly interactive and visually stunning iteration of the premium laundry serv
 
 ## ✨ Features
 
-- **Kinetic Orbital & Anti-Rotation Systems:** Implements complex `@keyframes orbit` and `@keyframes anti-rotate-shrink` vectors that allow secondary layout illustration components to loop cleanly through coordinated rotational paths.
-- **Elastic Squash & Stretch Physics:** Utilizes professional Disney animation principles via variable `scaleX` and `scaleY` properties ($0.8$ to $1.2$) to mimic realistic material impact, snap-back momentum, and fluid bounce mechanics when components reset.
-- **Dynamic Call-to-Action Micro-Interactions:** Retains the high-energy tactile button states that scale and tilt seamlessly upon hover engagement.
-- **Pure-CSS Mobile Sidebar Drawer:** Leverages CSS `:focus-within` mechanics for a seamless mobile layout experience, bypassing heavy client-side JavaScript execution profiles completely.
+- **Orbital & Anti-Rotation :** Implements `@keyframes orbit` and `@keyframes rev-shrink`
+- **Squash & Stretch Physics:** Utilizes `scaleX` and `scaleY` properties ($0.7$ to $1.3$).
 
 ---
 
