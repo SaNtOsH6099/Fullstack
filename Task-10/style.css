@@ -1,3 +1,7 @@
+:root {
+  /* radius for the orbit  */
+  --radius: 15px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -98,7 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 5rem;
+  padding-top: 5%;
   gap: 1rem;
 }
 
@@ -131,24 +135,29 @@ body {
 
 .hero-right {
   width: 50%;
-  padding-top: 2rem;
   display: flex;
-  align-items: flex-start;
+  padding-top: 20%;
   justify-content: center;
 }
-.wrapper {
+.orbit {
+  width: calc(var(--radius) * 2);
+  height: calc(var(--radius) * 2);
+  /* added a variable to change radius of orbit . change it at the top(not commented by AI) */
   border-radius: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
   animation: orbit 2s ease-in-out 1s infinite;
 }
-
+.holder {
+  animation: rev-shrink 2s ease-in-out 1s infinite;
+  /* rotating this instead of the image */
+}
 .hero-img {
   width: 40vw;
-  transform: translateX(25px);
-  animation: rev-shrink 2s ease-in-out 1s infinite;
+  transform: translateX(var(--radius));
+  /* animation: rev-shrink 2s ease-in-out 1s infinite; */
+  /* changed this to not rotate the image . */
 }
 
 /* -------------------Media------------------------------ */
@@ -181,10 +190,7 @@ body {
     width: 45%;
   }
   .hero-right {
-    padding-top: 1rem;
-  }
-  .wrapper {
-    border-radius: 50%;
+    padding-top: 20%;
   }
 }
 /*--------------------- 480px----------------------- */
@@ -262,31 +268,78 @@ body {
 
 /* -------------Animation----------------- */
 
+/* Comments hand typed and said by myself ❤️ */
+
+/* Tried to match the video exactly as possible */
+/* normal outer orbit */
 @keyframes orbit {
   0% {
     transform: rotate(0deg);
   }
-  60% {
+  70% {
     transform: rotate(360deg);
   }
+  /* rotation completes at 70% to later apply the slide and shrink displayed in the video */
+
+  /* 60%-100% rest time */
   100% {
     transform: rotate(360deg);
   }
 }
+
+/* Counter rotation and shrink animation below made after a lot of failures  */
+/* Full explaination written in the README file */
+
 @keyframes rev-shrink {
   0% {
-    transform: translateX(25px) rotate(0deg) scaleX(1) scaleY(1);
+    transform: translateX(var(--radius)) rotate(0deg) scaleX(1) scaleY(1)
+      skew(0deg);
   }
-  60% {
-    transform: translateX(25px) rotate(-360deg) scaleX(1) scaleY(1);
+  70% {
+    transform: translateX(var(--radius)) rotate(-360deg) scaleX(1) scaleY(1)
+      skew(0deg);
   }
+  /* counter rotation also completes on 70% to match the orbit flow and stays upright */
+
+  /* 70%-100% rest time for slide back to origin and squash */
   80% {
-    transform: translateX(0px) rotate(-360deg) scaleX(1) scaleY(1);
+    transform: translateX(0px) rotate(-360deg) scaleX(1) scaleY(1) skew(0deg);
+  }
+  85% {
+    transform: translateX(0px) rotate(-360deg) scaleX(0.9) scaleY(1.1)
+      skew(20deg);
   }
   90% {
-    transform: translateX(0px) rotate(-360deg) scaleX(0.7) scaleY(1.3);
+    transform: translateX(0px) rotate(-360deg) scaleX(0.7) scaleY(1.3)
+      skew(30deg);
+  }
+  95% {
+    transform: translateX(0px) rotate(-360deg) scaleX(0.9) scaleY(1.1)
+      skew(20deg);
   }
   100% {
-    transform: translateX(0px) rotate(-360deg) scaleX(1) scaleY(1);
+    transform: translateX(0px) rotate(-360deg) scaleX(1) scaleY(1) skew(0deg);
   }
 }
+
+/* -----------------------------#Animation without counter rotation ------------------------*/
+/* Comment above and Uncomment below to check how it behaves */
+/* The Image will rotate with the orbit rotating */
+
+/* @keyframes rev-shrink {
+  0% {
+    transform: translateX(var(--radius)) scaleX(1) scaleY(1);
+  }
+  60% {
+    transform: translateX(var(--radius)) scaleX(1) scaleY(1);
+  }
+  80% {
+    transform: translateX(0px) scaleX(1) scaleY(1);
+  }
+  90% {
+    transform: translateX(0px) scaleX(0.5) scaleY(1.5);
+  }
+  100% {
+    transform: translateX(0px) scaleX(1) scaleY(1);
+  }
+} */
