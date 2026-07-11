@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../Styles/cart.css">
+</head>
+
+<body>
+    <header>
+        <div class="hidden-navbar">
+            <button class="hamburger">☰</button>
+            <ul class="hidden-nav-links">
+                <li class="hidden-nav-item"><a href="../index.html">Home</a></li>
+                <li class="hidden-nav-item"><a href="#">About</a></li>
+                <li class="hidden-nav-item">
+                    <select name="brands" id="brands" class="hidden-selection">
+                        <option value="">Brands</option>
+                        <option value="nike">Nike</option>
+                        <option value="puma">Puma</option>
+                    </select>
+                </li>
+                <li class="hidden-nav-item">
+                    <select name="more" id="more" class="hidden-selection">
+                        <option value="">More</option>
+                        <option value="policy">Policy</option>
+                    </select>
+                </li>
+                <li class="hidden-nav-item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="../images/brand-logo.png" alt="brand logo" class="brand-logo">
+            </div>
+
+            <ul class="nav-links">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item">
+                    <select name="brands" id="brands" class="selection">
+                        <option value="">Brands</option>
+                        <option value="nike">Nike</option>
+                        <option value="puma">Puma</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select name="more" id="more" class="selection">
+                        <option value="">More</option>
+                        <option value="policy">Policy</option>
+                    </select>
+                </li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="search-profile">
+                <div class="search-bar">
+                    <span class="search-icon">🔍︎</span>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav-cart">
+                    <img src="../images/shopping-bag.png" alt="cart icon" class="cart-icon">
+                    <span class="cart-quantity">3</span>
+                </div>
+                <div class="profile">
+                    <img src="../images/profile-icon.jpg" alt="profile icon" class="profile-icon">
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <h1 class="heading">Shopping Cart</h1>
+            <div class="table-total">
+                <div class="cart-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quality</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Thala7 Premium Me..</td>
+                                <td>- 1 +</td>
+                                <td class="price">₹1,334 <span>x</span></td>
+                            </tr>
+                            <tr>
+                                <td>Thala7 Premium Me..</td>
+                                <td>- 1 +</td>
+                                <td class="price">₹1,334 <span>x</span></td>
+                            </tr>
+                            <tr>
+                                <td>Thala7 Premium Me..</td>
+                                <td>- 1 +</td>
+                                <td class="price">₹1,334 <span>x</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="payment">
+                    <div class="subtotal-card">
+                        <label for="coupon" class="enter">Enter Coupon Code</label>
+                        <div class="coupon-container">
+                            <input type="text" class="coupon-text" id="coupon" placeholder="Coupon Code">
+                            <button class="apply-btn">Apply Coupon</button>
+                        </div>
+                        <div class="subtotal">
+                            <div class="sub">
+                                <p>Sub Total</p>
+                                <p>₹4002</p>
+                            </div>
+                            <div class="sub">
+                                <p>Taxes(if applicable)</p>
+                                <p>₹199</p>
+                            </div>
+                            <div class="sub">
+                                <p>Discount</p>
+                                <p>₹0</p>
+                            </div>
+                            <div class="total">
+                                <p>Total</p>
+                                <p>₹4201</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./payment.html" target="_blank" class="pay-btn">Pay Now ₹4201</a>
+                    <div class="razor-pay">
+                        <img src="../icons/mcafee.png" alt="" class="pay-icons">
+                        <img src="../icons/razorpay-icon.png" alt="" class="pay-icons">
+                        <img src="../icons/secure.png" alt="" class="pay-icons">
+                    </div>
+                </div>
+
+            </div>
+            <div class="continue-container">
+                <a href="./product.html" class="continue-link">
+                    < Continue Shopping </a>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

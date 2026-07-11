@@ -1,0 +1,218 @@
+:root {
+  --tile-bg: rgb(15, 15, 15);
+  --border-radius: 8px;
+  --border-radius-s: 5px;
+  --second-text: rgb(179, 178, 178);
+  --third-text: rgb(131, 131, 131);
+  --accent: rgb(255, 106, 0);
+  --blue-accent: rgb(0, 187, 255);
+}
+
+main {
+  min-height: 100vh;
+}
+.container {
+  height: 100%;
+  padding: 7rem 4rem 1rem;
+  max-width: 1200px;
+  color: white;
+  margin: 0 auto;
+}
+.heading {
+  font-size: 1.3rem;
+  font-weight: 550;
+}
+.table-total {
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+.cart-table {
+  width: 60%;
+}
+.payment {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: var(--border-radius);
+}
+thead {
+  border-bottom: 1px solid var(--third-text);
+}
+tbody {
+  color: var(--second-text);
+  font-size: 0.7rem;
+}
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+}
+th {
+  font-size: 0.6rem;
+  color: var(--third-text);
+  font-weight: 500;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.price span {
+  color: rgb(232, 72, 72);
+  font-weight: bolder;
+  cursor: pointer;
+}
+/* *-----------Subtotal Card------------------- */
+
+.subtotal-card {
+  padding: 1rem 0.5rem;
+  background-color: var(--tile-bg);
+  border-radius: var(--border-radius);
+}
+.enter {
+  font-size: 0.6rem;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+.coupon-container {
+  display: flex;
+  gap: 0.5rem;
+}
+.coupon-text {
+  width: 60%;
+  padding: 0.7rem 0.3rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--third-text);
+  background-color: transparent;
+  color: white;
+}
+.apply-btn {
+  width: 40%;
+  border-radius: var(--border-radius);
+  border: none;
+  background-color: var(--blue-accent);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.sub,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.sub {
+  font-size: 0.7rem;
+  color: var(--second-text);
+}
+.total {
+  font-size: 0.8rem;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: var(--accent);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.razor-pay {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pay-icons {
+  width: 20%;
+}
+/* *-----------Subtotal Card------------------- */
+
+.continue-container {
+  margin-top: 5rem;
+}
+.continue-link {
+  position: fixed;
+  bottom: 2rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+}
+
+/* ? ------------------------Media Queries------------------------- */
+
+@media (max-width: 780px) {
+  .heading {
+    font-size: 1rem;
+  }
+  .table-total {
+    gap: 1rem;
+  }
+  .container {
+    padding: 5rem 1rem 1rem;
+  }
+  tbody {
+    font-size: 0.6rem;
+  }
+  .coupon-text,
+  .apply-btn {
+    padding: 0.4rem 0.2rem;
+    font-size: 0.7rem;
+    border-radius: var(--border-radius-s);
+  }
+  .total,
+  .pay-btn {
+    font-size: 0.7rem;
+  }
+
+  .continue-link {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5rem 0.5rem 1rem;
+  }
+  .table-total {
+    flex-direction: column;
+  }
+  .cart-table {
+    width: 100%;
+  }
+  .payment {
+    width: 100%;
+  }
+  .sub {
+    font-size: 0.6rem;
+  }
+  .total {
+    font-size: 0.7rem;
+  }
+}
+
+/* ? ------------------------Media Queries------------------------- */
+/* !----------------------------------------------- */
+.apply-btn:hover,
+.pay-btn:hover {
+  opacity: 0.7;
+}
+.apply-btn:active,
+.pay-btn:active {
+  transform: scale(0.95);
+}

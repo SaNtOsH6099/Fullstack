@@ -1,3 +1,3 @@
-# Fullstack
+# MERNstack
 
-all tasks from fullstack course
+all tasks from MERNstack course
