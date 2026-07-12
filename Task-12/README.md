@@ -2,6 +2,9 @@
 
 Calculates compound interest based on static values.
 
+Click the link below to see the live deployement
+[https://santosh6099.github.io/Fullstack/Task-12/](https://santosh6099.github.io/Fullstack/Task-12/)
+
 # How to run
 
 1. Download all th files.
