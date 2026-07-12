@@ -12,7 +12,7 @@ Click the link below to see the live deployement
 
 # How to run
 
-1. Download all th files.
+1. Download all the files.
 2. Make a Folder and move the downloaded files into the folder.
 3. Download Live Server extension.
 4. open the "index.html" file and run the live server located at the bottom right on your Screen.
