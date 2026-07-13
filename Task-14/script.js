@@ -1,5 +1,5 @@
 // different numbers to test
-let num1 = 20;
+let num1 = 37;
 let num2 = 153;
 let num3 = 121;
 let num4 = 37;
@@ -27,12 +27,12 @@ let count = 0; // for counting factors
 if (num <= 1) { // prime numbers start from 2
     console.log(`Is it a prime number? No`)
 } else {
-    for (let i = 1; i < num; i++) { //run from 1 to n-1
+    for (let i = 2; i < num; i++) { //run from 1 to n-1
         if (num % i == 0) {
             count++; // increament if factor exists
         }
     }
-    if (count > 1) { // check if only 1 factors which is 1
+    if (count > 0) { // check if only 1 factors which is 1
         console.log(`Is it a prime number? No`)
     } else {
         console.log(`Is it a prime number? Yes`)
