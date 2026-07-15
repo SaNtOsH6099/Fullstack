@@ -7,11 +7,11 @@ Click the link below to see the live deployement
 
 ## features
 
-- proper comments
-- arrow functions
-- error handling
-- timeout function for better feel
-- double dimesion array for testing
+- proper comments.
+- arrow functions.
+- error handling.
+- timeout function for better feel.
+- double dimesion array for testing.
 
 # How to run
 
