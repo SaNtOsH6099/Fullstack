@@ -46,7 +46,7 @@ search.addEventListener("input", () => { // input event listener will work with 
 
     // filter to only store objects that matches certain criteria
     const matched = students.filter(student => {
-        return student.name.toLowerCase().startsWith(searchVal);
+        return student.name.toLowerCase().includes(searchVal);
     }//making all the student names lower case to check if they container the input value
     )
 

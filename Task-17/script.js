@@ -4,8 +4,8 @@ const division = (num1, num2) => {
         setTimeout(() => {
             // ternery operation
             (num2 === 0) ? reject("Cannot divide a number by Zero") : resolve(num1 / num2);
-        }, 500); // seting small delay for answer
-
+        }, 500);
+        // seting small delay for answer
         // what actually happens
         // if (num2 === 0) {
         //     reject("Cannot divide a number by Zero")
@@ -16,17 +16,14 @@ const division = (num1, num2) => {
 }
 
 // async function to resolve the errors
-const start = async (num1, num2) => {
-    try {
-        console.log(`Dividing ${num1} by ${num2} `);
-        const res = await division(num1, num2); // awaits for the promise to be fulfilled
+const start = (num1, num2) => {
+    console.log(`Dividing ${num1} by ${num2} `);
+    division(num1, num2).then((res) => {
         console.log(`Result :`, res);
-
-    } catch (err) { // catches errors or reject msg
+    }).catch((err) => { // catches errors or reject msg
         console.log(`Error :`, err);
-    }
+    })
 }
-
 // double dimension array to test multiple cases at once
 const testCases = [
     [9, 3],
