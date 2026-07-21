@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 19</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<body>
+    <header>
+        <div class="hidden-navbar"><button class="hamburger">☰</button>
+            <ul class="hidden-nav-container">
+                <li class="hidden-nav-items"><a href="#">Home</a></li>
+                <li class="hidden-nav-items"><a href="#">Services</a></li>
+                <li class="hidden-nav-items"><a href="#">Contact Us</a></li>
+                <li class="hidden-nav-items"><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div class="logo">
+                Logo
+            </div>
+            <ul class="nav-items-container">
+                <li class="nav-items"><a href="#">Home</a></li>
+                <li class="nav-items"><a href="#">Services</a></li>
+                <li class="nav-items"><a href="#">Contact Us</a></li>
+                <li class="nav-items"><a href="#">About Us</a></li>
+            </ul>
+            <div class="nav-user">
+                <p class="username">Username</p>
+                <div class="logout-icon">
+                    ➜]
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="half left-side">
+                <div class="left-half left-upper">
+                    <div class="cart-wrapper">
+                        <div class="item-header">Added Items</div>
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th class="left">S.no</th>
+                                    <th class="middle">Service Name</th>
+                                    <th class="right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="no-info-container">
+                        <div class="info-icon">ⓘ</div>
+                        <div class="no-item">No items Added</div>
+                        <div class="no-item-desc">Add items to the cart from the services list.</div>
+                    </div>
+
+                    <div class="total-container">
+                        <p class="total">Total Amount</p>
+                        <p class="price">₹0</p>
+                    </div>
+
+                </div>
+                <div class="left-half left-down">
+                    <div class="book-now-container">
+                        <div class="book-header">Book Now</div>
+                        <div class="name">
+                            <label for="name">Full Name</label>
+                            <div class="name-input input-container">
+                                <i class="fa-regular fa-user icons"></i>
+                                <input type="text" id="name" placeholder="John Doe">
+                            </div>
+
+                        </div>
+
+                        <div class="email-phone">
+                            <div class="email">
+                                <label for="email">Email ID</label>
+                                <div class="email-input input-container">
+                                    <i class="fa-regular fa-envelope icons"></i>
+                                    <input type="email" id="email" placeholder="abc@gmail.com">
+                                </div>
+                            </div>
+                            <div class="phone">
+                                <label for="phone">Phone Number</label>
+                                <div class="phone-input input-container">
+                                    <i class="fa-solid fa-phone icons"></i>
+                                    <input type="tel" id="phone" placeholder="0000000000">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="half right-side">
+                <div class="right-container">
+                    <div class="right-header-container">
+                        <h2 class="right-header">Browse Our Services</h2>
+                        <p class="right-header-desc">Click on the add button to add services to your cart or press skip.
+                        </p>
+                    </div>
+                    <div class="services-display-container">
+                        <img src="./img/dry-clean.png" alt="Dry cleaning service image" class="service-img">
+                    </div>
+                    <div class="service-amount-container">
+                        <h2 class="service-name">Dry Cleaning</h2>
+                        <h2 class="service-amount">₹200.00</h2>
+                    </div>
+                    <div class="skip-add-container">
+                        <button class="skip-btn">
+                            <p class="btn-text">Skip Item</p>
+                            <i class="fa-regular fa-circle-xmark btn-icon"></i>
+                        </button>
+                        <button class="add-btn">
+                            <p class="btn-text">Add Item</p>
+                            <i class="fa-regular fa-square-plus btn-icon"></i>
+                        </button>
+                    </div>
+
+                    <div class="right-footer">
+                        <div class="right-info-icon">
+                            ⓘ
+                        </div>
+
+                        <p class="right-footer-desc">Add the items to the cart and book now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

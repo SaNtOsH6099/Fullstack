@@ -65,7 +65,7 @@ search.addEventListener("input", () => { // input event listener will work with 
     </div>`
     })
 
-    container.innerHTML = matchedStudents.join(""); // finally adding everyhing to the container
+    container.innerHTML = matchedStudents.join(""); // finally adding everything to the container
 
     if (search.value === "") { // if there is no input value
         container.innerHTML = studentCards.join(""); // the container reverts to original state.
