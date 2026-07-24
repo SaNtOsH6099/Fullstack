@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 20</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="hidden-navbar"><button class="hamburger">☰</button>
+            <ul class="hidden-nav-container">
+                <li class="hidden-nav-items"><a href="#hero">Home</a></li>
+                <li class="hidden-nav-items"><a href="#services">Services</a></li>
+                <li class="hidden-nav-items"><a href="#newsletter">About Us</a></li>
+                <li class="hidden-nav-items"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div class="logo">Logo</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-item">Home</a></li>
+                <li><a href="#services" class="nav-item">Services</a></li>
+                <li><a href="#newsletter" class="nav-item">About Us</a></li>
+                <li><a href="#contact" class="nav-item">Contact Us</a></li>
+            </ul>
+            <div class="username">
+                <i class="fa-solid fa-user accent-text"></i>
+                Username
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-section" id="hero">
+            <div class="hero-content">
+                <div class="hero-heading">Revitalize Your
+                    Clothes with Expert
+                    <span class="accent-text">Laundry Services!</span>
+                </div>
+                <div class="hero-description">
+                    From premium dry cleaning to swift wash ad fold,
+                    we deliver care and convenience. Schedule a pickup and
+                    rediscover the freshness of your clothes
+                    today!
+                </div>
+                <div class="btn-container">
+                    <a href="#services" class="hero-btn">
+                        <i class="fa-regular fa-calendar"></i>
+                        Book a service today!
+                    </a>
+                </div>
+            </div>
+            <div class="hero-display">
+                <img src="./img/hero-image.png" alt="" class="hero-img">
+            </div>
+        </div>
+
+
+        <div class="achievement-section">
+            <div class="container ach-container">
+                <div class="achievement-name">
+                    <div class="trophy">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    Our Achievements
+                </div>
+                <div class="achievement-number-container">
+                    <div class="achievement-box">
+                        <div class="number">
+                            15+
+                        </div>
+                        <div class="text">
+                            Laundry Services
+                        </div>
+                    </div>
+                    <div class="achievement-box">
+                        <div class="number">
+                            240+
+                        </div>
+                        <div class="text">
+                            Happy Customers
+                        </div>
+                    </div>
+                    <div class="achievement-box">
+                        <div class="number">
+                            2+Yrs
+                        </div>
+                        <div class="text">
+                            Experience
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cart-section container" id="services">
+            <div class="cart-left">
+                <div class="cart-heading-container">
+                    <div class="cart-heading">
+                        Our Services
+                    </div>
+                    <div class="cart-heading-desc">
+                        Click On The Add To Cart Button To
+                        Add The Services To Your Cart
+                    </div>
+                </div>
+
+                <div class="service-list">
+                </div>
+                <div class="cart-left-footer">
+                    <div class="footer-info-icon">ⓘ</div>
+                    <p>Add the items to the cart and book now</p>
+                </div>
+            </div>
+
+            <div class="cart-right">
+                <div class="cart-upper">
+
+                    <div class="cart-table-container">
+                        <div class="table-header">Added Items</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="left">S.No</th>
+                                    <th class="mid">Service Name</th>
+                                    <th class="right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="no-items-text">
+                        <div class="info-icon">ⓘ</div>
+                        <div class="no-item">No items Added</div>
+                        <div class="no-item-desc">Add items to the cart from the services list.</div>
+                    </div>
+
+                    <div class="total-container">
+                        <p class="total">Total Amount</p>
+                        <p class="price">₹0</p>
+                    </div>
+                </div>
+                <div class="cart-lower">
+                    <div class="book-now-header">
+                        Book Now
+                    </div>
+                    <form class="details">
+                        <div class="name-data">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name" class="book-input" required>
+                        </div>
+                        <div class="email-phone">
+                            <div class="email">
+                                <label for="email">Email ID</label>
+                                <input type="email" name="email" id="email" class="book-input" required>
+                            </div>
+                            <div class="phone">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" class="book-input" required>
+                            </div>
+                        </div>
+                        <input type="submit" class="book-btn" name="Book now" id="book-btn">
+                        <p class="add-items">ⓘ Add the items to the cart and book now</p>
+                        <p class="send-email">ⓘ Email has been sent successfully</p>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="newsletter-section" id="newsletter">
+            <div class="quality-section">
+                <div class="container quality-tiles">
+                    <div class="tile premium">
+                        <i class="fa-regular fa-star tile-icon"></i>
+                        <div class="tile-heading">Premium Services</div>
+                        <div class="tile-desc">
+                            Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as
+                            good as new.
+                        </div>
+                    </div>
+                    <div class="tile support">
+                        <i class="fa-solid fa-headset tile-icon"></i>
+                        <div class="tile-heading">Quick Support</div>
+                        <div class="tile-desc">
+                            We're committed to providing prompt solutions to ensure your experience is smooth and
+                            worry-free
+                        </div>
+                    </div>
+                    <div class="tile delivery">
+                        <i class="fa-solid fa-truck tile-icon"></i>
+                        <div class="tile-heading">Hassle Free Delivery</div>
+                        <div class="tile-desc">
+                            Enjoy seamless service with our convenient pickup and delivery options, tailored to your
+                            schedule.
+                        </div>
+                    </div>
+                    <div class="tile prices">
+                        <i class="fa-solid fa-money-bill-transfer tile-icon"></i>
+                        <div class="tile-heading"> Affordable Prices</div>
+                        <div class="tile-desc">
+                            Experience exceptional care without breaking the bank – our affordable prices make laundry
+                            day stress-free.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="subscription-section" id="contact">
+                <div class="subs container">
+                    <div class="subs-left">
+                        Subscribe to our newsletter.
+                    </div>
+                    <form class="subs-right">
+                        <input type="text" class="name-input" placeholder="Full name" required>
+                        <input type="email" class="email-input" placeholder="Email" required>
+                        <input type="submit" class="subs-btn" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+
+            <div class="newsletter-footer">
+                <div class="container footer-tiles">
+                    <div class="footer-tile about first-tile">
+                        <div class="foot-logo">Logo</div>
+                        <div class="foot-header">About us</div>
+                        <p class="foot-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="footer-tile links">
+                        <div class="foot-header">Important Links</div>
+                        <p class="foot-text">About us</p>
+                        <p class="foot-text">Contact us</p>
+                        <p class="foot-text">Privacy Policy</p>
+                        <p class="foot-text">Terms of use</p>
+                        <p class="foot-text">Refund Policy</p>
+                    </div>
+                    <div class="footer-tile contact">
+                        <div class="foot-header">Contact</div>
+                        <p class="foot-text">mail@site.com</p>
+                        <p class="foot-text">+91 123454 67890</p>
+
+                    </div>
+                    <div class="footer-tile follow">
+                        <p class="foot-header">Follow Us</p>
+                        <div class="foot-icon-container">
+                            <i class="fa-brands fa-instagram foot-icon"></i>
+                            <i class="fa-brands fa-facebook foot-icon"></i>
+                            <i class="fa-brands fa-twitter foot-icon"></i>
+                            <i class="fa-brands fa-square-youtube foot-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

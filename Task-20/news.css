@@ -1,0 +1,245 @@
+:root {
+  --accent: #3b82f6;
+  --accent-border: rgba(59, 131, 246, 0.24);
+  --accent-hover: #2563eb;
+  --transparent-card: #111827a4;
+
+  --main-text: #f8fafc;
+  --secondary-text: #94a3b8;
+
+  --border-colour: #334155;
+  --border-radius: 10px;
+  --border-radius-s: 5px;
+
+  --bg: #0b1120;
+  --card: #111827;
+  --card-light: #1a2333;
+
+  --divider: #243244;
+  --shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+}
+.newsletter-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+}
+.quality-section {
+  padding: 2rem 0;
+}
+.quality-tiles {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+.tile {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  text-align: center;
+}
+.tile-icon {
+  font-size: 2rem;
+}
+.tile-desc {
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}
+
+.subscription-section {
+  background-color: var(--card);
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--accent-border);
+  border-left: none;
+  border-right: none;
+}
+.subs {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+}
+.subs-left {
+  width: 30%;
+  font-size: 2.5rem;
+  color: var(--accent);
+  font-weight: bold;
+}
+.subs-right {
+  width: 50%;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "name email"
+    "subscribe none";
+}
+.name-input {
+  grid-area: name;
+
+  padding: 1rem;
+}
+.email-input {
+  grid-area: email;
+
+  padding: 1rem;
+}
+.subs-btn {
+  grid-area: subscribe;
+  padding: 1rem 0;
+  border-radius: var(--border-radius-s);
+  border: none;
+  background-color: var(--accent);
+  color: var(--main-text);
+  cursor: pointer;
+}
+.newsletter-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.footer-tiles {
+  display: flex;
+  padding: 0 0.5rem;
+  width: 100%;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.footer-tile {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.foot-logo {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.foot-header {
+  font-size: 0.9rem;
+}
+.foot-text {
+  font-size: 0.7rem;
+}
+
+.foot-icon-container {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 780px) {
+  .tile-icon {
+    font-size: 1.5rem;
+  }
+  .tile-heading {
+    font-size: 0.8rem;
+  }
+  .tile-desc {
+    font-size: 0.6rem;
+  }
+  .subs-left {
+    font-size: 1.8rem;
+  }
+  .subs-right > * {
+    padding: 0.7rem;
+  }
+  .subs-right {
+    width: 40%;
+    grid-template-areas:
+      "name"
+      "email"
+      "subscribe";
+  }
+
+  .foot-logo {
+    font-size: 1.3rem;
+  }
+  .foot-header {
+    font-size: 0.8rem;
+  }
+  .foot-text {
+    font-size: 0.6rem;
+  }
+  .foot-icon-container {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-section {
+    padding: 2rem 0;
+  }
+  .quality-tiles {
+    display: grid;
+    grid-template-areas:
+      "premium support"
+      "delivery prices";
+  }
+  .tile {
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .premium {
+    grid-area: premium;
+  }
+  .support {
+    grid-area: support;
+  }
+  .delivery {
+    grid-area: delivery;
+  }
+  .prices {
+    grid-area: prices;
+  }
+
+  .subs-left {
+    font-size: 1.5rem;
+  }
+
+  .footer-tiles {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "about links contact"
+      ". follow .";
+  }
+  .about {
+    grid-area: about;
+  }
+  .links {
+    grid-area: links;
+  }
+  .contact {
+    grid-area: contact;
+  }
+  .follow {
+    grid-area: follow;
+    text-align: center;
+  }
+  .footer-tile {
+    width: 100%;
+  }
+  .foot-icon-container {
+    justify-content: center;
+  }
+}
+/* !--------------Effects------------------- */
+.subs-btn:hover {
+  background-color: var(--accent-hover);
+}
+.subs-btn:active {
+  transform: scale(0.95);
+}
