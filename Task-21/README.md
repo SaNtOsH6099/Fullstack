@@ -43,3 +43,8 @@ Click the link below to see the live deployement
 - cities section becomes single columnn grid
 - signup button in center
 - footer flex direction column
+
+<!-- Everything is actually written by me it took me 3 days to complete this section by section -->
+
+<!-- i actually cannot find my desktop navbar intefering with mobile nav.
+    it works perfectly on mine , even tested on different screen + responsive with inspect -->

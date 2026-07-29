@@ -87,6 +87,8 @@ body {
   gap: 1rem;
   position: fixed;
   height: 100vh;
+
+  /* i am using this from some projects already */
   /*  backdrop filter makes changes to the element behind the current element */
   /* in this case it blurs the background while its transparent so it looks like glass */
   backdrop-filter: blur(6px);
@@ -198,6 +200,9 @@ nav {
 @media (max-width: 780px) {
   /* * navbar--------------- */
 
+  .nav-links {
+    font-size: 0.7rem;
+  }
   .nav-logo {
     width: 5rem;
   }
@@ -220,6 +225,7 @@ nav {
 @media (max-width: 480px) {
   /* * navbar--------------- */
   /* nav button appears when max width in 480px */
+  /* it behaves exactly like it was intended on my system */
   .hamburger {
     display: block;
   }
