@@ -1,20 +1,3 @@
-:root {
-  --body-bg: rgb(10, 10, 10);
-  --card: rgba(18, 18, 18, 0.663);
-
-  --primary-text: rgb(246, 246, 246);
-  --secondary-text: rgb(141, 141, 141);
-
-  --orange-accent: rgb(223, 119, 7);
-  --orange-hover: #d58815;
-
-  --border-rad-l: 25px;
-  --border-rad-m: 10px;
-  --border-rad-s: 5px;
-
-  --overlay: 0, 0, 0, 0.7;
-}
-
 .testimonials-section {
   gap: 5rem;
   align-items: center;

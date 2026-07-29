@@ -10,6 +10,8 @@
   --orange-accent: rgb(223, 119, 7);
   --orange-hover: #d58815;
 
+  --divider: rgba(128, 128, 128, 0.358);
+
   --border-rad-l: 25px;
   --border-rad-m: 10px;
   --border-rad-s: 5px;
@@ -78,16 +80,40 @@ body {
 }
 .hidden-nav-links-container {
   width: 50vw;
-  right: -50%;
+  transform: translateX(100%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   position: fixed;
   height: 100vh;
+  /*  backdrop filter makes changes to the element behind the current element */
+  /* in this case it blurs the background while its transparent so it looks like glass */
   backdrop-filter: blur(6px);
   z-index: 3;
   transition: all 0.3s ease;
+}
+.close-btn {
+  background-color: transparent;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: none;
+  color: var(--primary-text);
+  border: 1px solid var(--primary-text);
+  font-weight: 100;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-in {
+  transform: translateX(0%);
+}
+.slide-out {
+  transform: translateX(100%);
 }
 .hidden-nav-items {
   box-shadow: 0 1px 2px rgba(47, 47, 47, 0.754);
@@ -193,12 +219,11 @@ nav {
 }
 @media (max-width: 480px) {
   /* * navbar--------------- */
+  /* nav button appears when max width in 480px */
   .hamburger {
     display: block;
   }
-  .hamburger:focus + .hidden-nav-links-container {
-    transform: translateX(-100%);
-  }
+  /* main nav dissapears */
   .nav-links {
     display: none;
   }

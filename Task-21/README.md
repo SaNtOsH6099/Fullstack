@@ -15,7 +15,6 @@ Click the link below to see the live deployement
 - glass background effect with blur .
 - modern and clean look.
 - same page links that scroll
-- slide up animation on dummy phone
 - responsive grid
 
 # How to run
