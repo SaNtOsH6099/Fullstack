@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Hero Landing Page</title>
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" text-black bg-linear-to-b min-h-screen from-orange-100 to-white relative flex flex-col items-center">
+    <header class="bg-white  flex justify-center sticky top-0 z-50 w-full shadow-sm shadow-gray-500">
+        <nav class="navbar flex justify-between items-center max-w-300 py-4 px-2 w-full">
+            <div class="project">
+                ✦ Project
+            </div>
+            <ul class="nav-links-container flex gap-4 text-xs items-center">
+                <li><a href="#" class="nav-links px-4 py-2 border border-transparent hover:border-amber-800 hover:text-amber-800 
+                        transition-all duration-200 ease-in-out rounded-sm">Product</a></li>
+                <li><a href="#" class="nav-links px-4 py-2 border border-transparent hover:border-amber-800 hover:text-amber-800 
+                        transition-all duration-200 ease-in-out rounded-sm">Solutions</a></li>
+                <li><a href="#" class="nav-links px-4 py-2 border border-transparent hover:border-amber-800 hover:text-amber-800 
+                        transition-all duration-200 ease-in-out rounded-sm">Resources</a></li>
+                <li><a href="#" class="nav-links px-4 py-2 border border-transparent hover:border-amber-800 hover:text-amber-800 
+                        transition-all duration-200 ease-in-out rounded-sm">Pricing</a></li>
+                <li><a href="#" class="nav-links px-4 py-2 border border-transparent hover:border-amber-800 hover:text-amber-800 
+                        transition-all duration-200 ease-in-out rounded-sm">Log in</a></li>
+                <li>
+                    <button
+                        class="nav-btn px-4 py-2 bg-gray-700 text-white rounded-sm cursor-pointer active:scale-95">Get
+                        AI free</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="hero-section max-w-300  w-full flex-1 flex flex-col items-center p-2 relative">
+        <div class="hero-heading-container py-6 flex flex-col gap-3.5">
+            <h1 class="heading-1 text-4xl font-semibold  text-center">
+                Write, plan, share. <br>
+                With AI at your side. </h1>
+
+            <p class="hero-subline text-sm text-center">
+                it is the connected workspace where better, faster work happens.Now with AI.
+            </p>
+        </div>
+
+        <!-- cta buttons -->
+        <div class="cta-button-container flex gap-2 items-center">
+            <a href="#" class="flex gap-2 items-center px-4 py-2 bg-black text-white rounded-sm 
+            cursor-pointer active:scale-95">
+                Get AI free
+                <i class="fa-solid fa-arrow-right-long ""></i>
+            </a>
+            <a href=" #" class="px-4 py-2 bg-blue-600 text-white rounded-sm cursor-pointer active:scale-95 ">
+                    Request a Demo
+            </a>
+        </div>
+
+        <!-- dashboard image -->
+        <img src="./assets/dashboard.jpg" alt="dashboard image" class="dashboard-img w-1/3 absolute rounded-sm bottom-20 shadow-md shadow-black left-1/2
+             transform -translate-x-1/2">
+
+        <!-- left floating card -->
+        <div class="card w-55 text-sm absolute z-10 left-4 top-1/2 p-4 bg-white shadow-lg shadow-gray-500 
+            flex flex-col gap-2 rounded-sm">
+            <div class="card-heading font-bold  flex gap-2 items-center">
+                <i class="fa-solid fa-clipboard-list text-red-500 text-xl"></i>
+                Tasks
+            </div>
+            <div class="card-content">
+                <p class="card-text">12 tasks completed today</p>
+            </div>
+        </div>
+
+        <!-- right upper floasting card -->
+        <div class="card w-55 text-sm absolute z-10 right-4 top-2/5 p-4 bg-white shadow-lg shadow-gray-500 
+            flex flex-col gap-2 rounded-sm">
+            <div class="card-heading font-bold  flex gap-2 items-center">
+                <i class="fa-solid fa-check text-green-500"></i>
+                Project status
+            </div>
+            <div class="card-content text-green-700">
+                On Track
+            </div>
+        </div>
+
+        <!-- right bottom card -->
+        <div class="card w-55 text-sm absolute z-10 right-40 top-3/5 p-4 bg-white shadow-lg shadow-gray-500 
+            flex flex-col gap-2 rounded-sm ">
+            <div class="card-heading font-bold flex gap-2 items-center">Team Activity</div>
+            <div class="card-content  flex  items-center ">
+                <div class="users-container w-1/2 relative h-8 ">
+                    <img src="./assets/user1.jpg" alt="user-image" class="users w-8 rounded-full absolute top-0">
+                    <img src="./assets/user2.jpg" alt="user-image" class="users w-8 rounded-full absolute top-0 left-4">
+                    <img src="./assets/user3.jpg" alt="user-image" class="users w-8 rounded-full absolute top-0 left-8">
+                    <img src="./assets/user4.jpg" alt="user-image"
+                        class="users w-8 rounded-full absolute top-0 left-12">
+                </div>
+                <div class="text right-0 text-xs text-nowrap flex-1">+5 Online</div>
+            </div>
+        </div>
+
+        <div class="chat-icon bg-black text-white py-2 px-4 fixed bottom-6 right-6 z-50 rounded-md cursor-pointer">
+            <i class="fa-solid fa-comment"></i>
+        </div>
+    </main>
+
+</body>
+
+</html>
