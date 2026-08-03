@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Hero Landing Page</title>
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen flex flex-col items-center ">
+    <header class=" h-16 w-full flex justify-center bg-white">
+        <nav class=" flex justify-between items-center max-w-300 w-full p-2">
+            <div class="logo-container flex items-center gap-2 font-bold">
+                <i class="fa-solid fa-rocket text-red-500 text-xl"></i>
+                AppName
+            </div>
+            <ul class="nav-links-container gap-2 text-sm hidden sm:flex">
+                <li class="py-2 px-4"><a href="#" class="nav-links">Features</a></li>
+                <li class="py-2 px-4"><a href="#" class="nav-links">Pricing</a></li>
+                <li class="py-2 px-4"><a href="#" class="nav-links">About</a></li>
+                <li class="py-2 px-4"><a href="#" class="nav-links">Contact</a></li>
+                <a href="#" class="nav-links py-2 px-4 bg-[#401f3e] text-white rounded-md  hover:-translate-y-1
+                hover:shadow-md hover:shadow-gray-400 transition-all duration-300 hover:brightness-150">Get
+                    Started</a>
+            </ul>
+            <div class="hamburger py-2 px-4 sm:hidden">☰</div>
+        </nav>
+    </header>
+
+    <main class="w-full text-white flex flex-col ">
+        <div class="hero-section w-full flex justify-center bg-linear-to-r from-blue-600 to-violet-600">
+            <div class="hero-container w-full max-w-300  flex flex-col md:flex-row gap-6 py-10">
+                <div class="half p-2 flex flex-col justify-evenly items-center gap-4  md:w-1/2">
+                    <div class="hero-header font-bold text-center text-3xl md:text-4xl lg:5xl">Build Amazing Products
+                        Faster
+                    </div>
+                    <div class="hero-desc text-center">
+                        The all-in-one platform for team to collaborate, build,
+                        and ship products that users love.
+                    </div>
+                    <div class="hero-btn-container w-full flex flex-col md:flex-row md:justify-center gap-2 md:gap-4">
+                        <a href="#" class="trial-btn flex justify-center items-center
+                         bg-white text-[#401f3e] border border-white py-2 md:py-3 md:px-6 
+                            text-center text-sm rounded-md   hover:-translate-y-1
+                            hover:shadow-md hover:shadow-gray-600 transition-all duration-300">Start
+                            Free Trial</a>
+                        <a href="#" class="demo-btn flex justify-center items-center  hover:-translate-y-1
+                        py-2 md:py-3 md:px-6 text-center text-sm border border-white hover:shadow-md hover:shadow-gray-600 
+                        transition-all duration-300 rounded-md">Watch Demo</a>
+                    </div>
+                </div>
+
+                <div class="half px-2 h-48 sm:h-60 md:w-1/2 md:h-80 flex justify-center items-start">
+                    <div class="rounded-lg overflow-hidden h-full w-full shadow-sm shadow-gray-700">
+                        <img src="./hero1.jpg" alt="Hero image" class="w-full h-full object-cover object-center ">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class=" w-full feature-section bg-gray-100 flex justify-center">
+            <div class="features-container w-full max-w-300   text-black p-2 flex flex-col gap-8 py-8">
+                <div class="feature-header  text-center font-bold text-2xl md:text-3xl">Powerful Features</div>
+
+                <div class="cards-container grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div class="card bg-white p-4 rounded-md  flex flex-col gap-1 transition-all duration-300 ease-in-out
+                        shadow-xs shadow-gray-300 hover:shadow-md hover:shadow-gray-600 hover:-translate-y-1">
+                        <i class="fa-solid fa-bolt bg-[#B9D6F2]/50 text-red-500 p-2 rounded-md w-8 h-8"></i>
+                        <div class="card-header text-sm font-bold">Lightning Fast</div>
+                        <div class="card-desc text-xs">Optimized for speed and performance.</div>
+                    </div>
+
+                    <div class="card bg-white p-4 rounded-md flex flex-col gap-1 transition-all duration-300 ease-in-out
+                        shadow-xs shadow-gray-300 hover:shadow-md hover:shadow-gray-600 hover:-translate-y-1">
+                        <i class="fa-solid fa-lock bg-[#85FFD8]/50 text-yellow-500 p-2 rounded-md w-8 h-8"></i>
+                        <div class="card-header text-sm font-bold">Secure</div>
+                        <div class="card-desc text-xs">Enterprise grade security built in. </div>
+                    </div>
+
+                    <div class="card bg-white p-4 rounded-md flex flex-col gap-1 transition-all duration-300 ease-in-out
+                        shadow-xs shadow-gray-300 hover:shadow-md hover:shadow-gray-600 hover:-translate-y-1">
+                        <i class="fa-solid fa-chart-line bg-[#DE85FF]/50 text-blue-500 p-2 rounded-md w-8 h-8"></i>
+                        <div class="card-header text-sm font-bold">Analytics</div>
+                        <div class="card-desc text-xs">Real time insights and reports.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer bg-[#264054] flex justify-center">
+            <div class=" w-full footer-container max-w-300 px-2 py-8 flex 
+                flex-col items-center gap-2 sm:flex-row sm:justify-between">
+                <div class="logo-container flex items-center gap-2 font-bold text-sm">
+                    <i class="fa-solid fa-rocket text-red-500 "></i>
+                    AppName
+                </div>
+                <div class="copyright text-center text-xs">
+                    2026 AppName. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
