@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes lift {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes color {
+  0% {
+    background-color: #7df324;
+  }
+  50% {
+    background-color: #65892d;
+  }
+  100% {
+    background-color: #7df324;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes combined {
+  0% {
+    transform: scale(1) translateY(0);
+    background-color: #e19413;
+  }
+  50% {
+    transform: scale(0.8) translateY(-0.5rem);
+    background-color: #4c7278;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    background-color: #e19413;
+  }
+}
+
+@layer utilities {
+  .animate-lift {
+    animation: lift 3s ease-in-out infinite;
+  }
+  .animate-color {
+    animation: color 3s ease-in-out infinite;
+  }
+  .animate-scale {
+    animation: scale 3s ease-in-out infinite;
+  }
+  .animate-combined {
+    animation: combined 3s ease-in-out infinite;
+  }
+}
