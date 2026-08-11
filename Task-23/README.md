@@ -1,6 +1,6 @@
-# Responsive Design & Layout Systems – AppName Landing Page (Task 23)
+# Greenwood Library Website (Task 23)
 
-Responsive Design & Layout Systems – AppName Landing Page
+Greenwood Library Website.
 
 Click the link below to see the live deployement
 [https://santosh6099.github.io/Fullstack/Task-23/](https://santosh6099.github.io/Fullstack/Task-23/)
@@ -8,17 +8,18 @@ Click the link below to see the live deployement
 ## features
 
 - interactive UI.
+- Proper comments
 - single page web application.
 - modern and clean look.
 - Tailwind styling
-- tailwind breakpoints
+- hidden navbar on mobile screens.
+- Responsive layouts.
+- Same page navigation links.
 
 # How to run
 
 1. Download all the files.
 2. Make a Folder and move the downloaded files into the folder.
 3. Download Live Server extension.
-4. open the "index.html" file and run the live server located at the bottom right on your Screen.
-5. Right click on the page and select "Inspect" to view the results in the console.
-
-<!-- already familiar with tailwind -->
+4. Download Better comments extensions to see different coloured comments
+5. open the "index.html" file and run the live server located at the bottom right on your Screen.

@@ -1,6 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-html {
-  font-family: "Montserrat", sans-serif;
+/* * Reference colors only*/
+:root {
+  --open-btn: #6bd6a9;
+  --open-btn-text: #165862;
+  --after: #f4cb66;
+  --green-light: #86eb68;
+  --card: #2b384f;
+  --yellow: #f9e8a2;
+  --orange: #fb6c00;
+  --blue: #97dde9;
+  --blue-dark: #133458;
+  --purple: #dcbfff;
+  --purple-dark: #711db0;
+  --red: #f78ca2;
+  --red-dark: #d80032;
+  --green: #c5ebaa;
+  --green-dark: #59ac77;
+  --silver: #b3c8cf;
+  --silver-dark: #526d82;
 }

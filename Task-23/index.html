@@ -1,114 +1,690 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tailwind cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Hero Landing Page</title>
+    <title>Greenwood Library Website</title>
     <!-- link to font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="min-h-screen flex flex-col items-center ">
-    <header class=" h-16 w-full flex justify-center bg-white">
-        <nav class=" flex justify-between items-center max-w-300 w-full p-2">
-            <div class="logo-container flex items-center gap-2 font-bold">
-                <i class="fa-solid fa-rocket text-red-500 text-xl"></i>
-                AppName
+<body class="relative bg-[#1D2635] text-white flex flex-col items-center font-['Montserrat']">
+
+    <!-- ! Navbar section -->
+    <header class="w-full border-b border-gray-600 flex justify-center sticky z-10 top-0  backdrop-blur-md">
+        <nav class="max-w-300 w-full flex justify-between items-center p-4">
+            <!-- *  Navbar logo-->
+            <div class="nav-logo flex gap-3 items-center p-1">
+                <h3 class="logo-name font-bold [text-shadow:0_0_2px_black]">Greenwood</h3>
+                <div class="open-btn hidden sm:block text-xs font-bold py-1 px-2 rounded-lg
+                 bg-[#6bd6a9] text-[#165862]">Open Sat</div>
             </div>
-            <ul class="nav-links-container gap-2 text-sm hidden sm:flex">
-                <li class="py-2 px-4"><a href="#" class="nav-links">Features</a></li>
-                <li class="py-2 px-4"><a href="#" class="nav-links">Pricing</a></li>
-                <li class="py-2 px-4"><a href="#" class="nav-links">About</a></li>
-                <li class="py-2 px-4"><a href="#" class="nav-links">Contact</a></li>
-                <a href="#" class="nav-links py-2 px-4 bg-[#401f3e] text-white rounded-md  hover:-translate-y-1
-                hover:shadow-md hover:shadow-gray-400 transition-all duration-300 hover:brightness-150">Get
-                    Started</a>
+
+            <!-- * Navbar links -->
+            <ul class="nav-links hidden md:flex gap-4">
+                <li>
+                    <a href="#sections" class="nav-item relative nav-item p-1 after:rounded-full
+                    after:transition-all after:duration-300 after:bg-[#F4CB66]
+                    after:absolute after:w-0 after:h-px after:left-0 after:-bottom-1
+                    hover:after:w-full after:ease-in-out [text-shadow:0_0_2px_black]">Sections</a>
+                </li>
+                <li>
+                    <a href="#spaces" class="nav-item relative nav-item p-1 after:rounded-full
+                    after:transition-all after:duration-300 after:bg-[#F4CB66]
+                    after:absolute after:w-0 after:h-px after:left-0 after:-bottom-1
+                    hover:after:w-full after:ease-in-out [text-shadow:0_0_2px_black]">Gallery</a>
+                </li>
+                <li>
+                    <a href="#membership" class="nav-item relative nav-item p-1 after:rounded-full
+                    after:transition-all after:duration-300 after:bg-[#F4CB66] 
+                    after:absolute after:w-0 after:h-px after:left-0 after:-bottom-1
+                    hover:after:w-full after:ease-in-out [text-shadow:0_0_2px_black]">Membership</a>
+                </li>
+                <li>
+                    <a href="#event" class="nav-item relative nav-item p-1 after:rounded-full
+                    after:transition-all after:duration-300 after:bg-[#F4CB66]
+                    after:absolute after:w-0 after:h-px after:left-0 after:-bottom-1
+                    hover:after:w-full after:ease-in-out [text-shadow:0_0_2px_black]">Events</a>
+                </li>
             </ul>
-            <div class="hamburger py-2 px-4 sm:hidden">☰</div>
+
+            <!-- *  Navbar button-->
+            <a href="#" class="visit-btn hidden sm:block text-sm border py-1 px-3 rounded-full hover:[text-shadow:0_0_0_black]
+            hover:bg-white hover:text-black transition-all duration-200 [text-shadow:0_0_2px_black]">
+                Visit Us
+            </a>
         </nav>
     </header>
 
-    <main class="w-full text-white flex flex-col ">
-        <div class="hero-section w-full flex justify-center bg-linear-to-r from-blue-600 to-violet-600">
-            <div class="hero-container w-full max-w-300  flex flex-col md:flex-row gap-6 py-10">
-                <div class="half p-2 flex flex-col justify-evenly items-center gap-4  md:w-1/2">
-                    <div class="hero-header font-bold text-center text-3xl md:text-4xl lg:5xl">Build Amazing Products
-                        Faster
-                    </div>
-                    <div class="hero-desc text-center">
-                        The all-in-one platform for team to collaborate, build,
-                        and ship products that users love.
-                    </div>
-                    <div class="hero-btn-container w-full flex flex-col md:flex-row md:justify-center gap-2 md:gap-4">
-                        <a href="#" class="trial-btn flex justify-center items-center
-                         bg-white text-[#401f3e] border border-white py-2 md:py-3 md:px-6 
-                            text-center text-sm rounded-md   hover:-translate-y-1
-                            hover:shadow-md hover:shadow-gray-600 transition-all duration-300">Start
-                            Free Trial</a>
-                        <a href="#" class="demo-btn flex justify-center items-center  hover:-translate-y-1
-                        py-2 md:py-3 md:px-6 text-center text-sm border border-white hover:shadow-md hover:shadow-gray-600 
-                        transition-all duration-300 rounded-md">Watch Demo</a>
+    <main class="max-w-7xl w-full flex flex-col items-center gap-8">
+
+        <!-- ! Hero section -->
+        <section id="hero" class="hero grid gap-8 w-full">
+
+            <div class="hero-section grid grid-rows-2 gap-8 lg:gap-12 p-4 md:grid-cols-2 md:grid-rows-1">
+                <!-- * hero text content -->
+                <div class="half flex flex-col gap-8 justify-center md:gap-4 lg:gap-8">
+                    <h1 class="hero-heading text-4xl font-light 
+                    sm:text-6xl md:text-4xl lg:text-5xl">Your Neighbourhood
+                        Library.
+                    </h1>
+                    <p class="hero-desc text-gray-300 sm:text-xl md:text-base">
+                        Thousands of books, quiet reading rooms, community events,
+                        and free Wi-Fi — serving Greenwood since 1983.</p>
+                    <div class="btn-container flex gap-4 sm:text-xl md:text-base ">
+                        <a href=" #" class="py-2 px-4 border rounded-full border-[#070800] bg-[#070800]
+                        hover:bg-gray-100 hover:text-black transition-all duration-200">Explore Collection</a>
+                        <a href="#" class="py-2 px-4 border rounded-full
+                        border-gray-300 hover:shadow-[0_0_1px_1px_white] transition-all duration-200">Join Free</a>
                     </div>
                 </div>
 
-                <div class="half px-2 h-48 sm:h-60 md:w-1/2 md:h-80 flex justify-center items-start">
-                    <div class="rounded-lg overflow-hidden h-full w-full shadow-sm shadow-gray-700">
-                        <img src="./hero1.jpg" alt="Hero image" class="w-full h-full object-cover object-center ">
+                <!-- * hero image -->
+                <div class="half overflow-hidden rounded-2xl shadow-[0_0_2px_black]">
+                    <img src="./assets/hero-img.jpg" alt="library image"
+                        class="w-full h-full hover:scale-105 transition-all duration-200">
+                </div>
+            </div>
+
+            <div class="stats-grid grid grid-cols-2 gap-4 p-4 md:grid-cols-4">
+                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]">
+                    <div class="stat-header font-bold text-xl">12,000+</div>
+                    <div class="stat-desc text-sm text-gray-300">Books & journals</div>
+                </div>
+                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]">
+                    <div class="stat-header font-bold text-xl">40+</div>
+                    <div class="stat-desc text-sm text-gray-300">Years of service</div>
+                </div>
+                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]">
+                    <div class="stat-header font-bold text-xl text-[#86EB68]">Free</div>
+                    <div class="stat-desc text-sm text-gray-300">Wi-Fi & basic access</div>
+                </div>
+                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]">
+                    <div class="stat-header font-bold text-xl ">6</div>
+                    <div class="stat-desc text-sm text-gray-300">Dedicated sections</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! Sections section -->
+        <section id="sections" class="our-sections w-full">
+            <div class="section-name p-4 relative text-sm text-gray-400 after:absolute
+               after:w-[calc(100%-2.5rem)] after:h-px after:bg-gray-600 after:left-5 after:bottom-0">
+                OUR SECTIONS
+            </div>
+
+            <!-- * Sections grid container -->
+            <div class="section-grid p-4 grid gap-4 md:grid-cols-2">
+                <!-- ?Fiction & Literature card -->
+                <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
+                hover:bg-[#F9E8A2] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                    <div class="card-heading font-bold text-lg">Fiction & Literature</div>
+                    <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
+                        Novels, short stories, and poetry — from timeless classics to new voices.
+                    </div>
+
+                    <div class="link ">
+                        <a href="" class="card-link text-xs text-gray-300 relative after:absolute text-shadow-xs
+                        after:h-px after:w-full after:bg-gray-300  text-shadow-gray-500
+                        after:-bottom-1 after:left-0 group-hover:after:bg-[#FB6C00] group-hover:text-[#FB6C00] ">
+                            Browse Fiction
+                        </a>
+                    </div>
+                </div>
+                <!-- ?Children's Corner card -->
+                <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
+                hover:bg-[#97DDE9] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                    <div class="card-heading font-bold text-lg">Children's Corner</div>
+                    <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
+                        Picture books, early readers, and a cozy space for young learners.
+                    </div>
+
+                    <div class="link ">
+                        <a href="" class="card-link text-xs text-gray-300 relative after:absolute text-shadow-xs
+                        after:h-px after:w-full after:bg-gray-300  text-shadow-gray-500
+                        after:-bottom-1 after:left-0 group-hover:after:bg-[#133458] group-hover:text-[#133458] ">
+                            Browse Children's
+                        </a>
+                    </div>
+                </div>
+                <!-- ?Science & Technology card -->
+                <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
+                hover:bg-[#DCBFFF] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                    <div class="card-heading font-bold text-lg">Science & Technology</div>
+                    <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
+                        Research journals, textbooks, and STEM reference materials.
+                    </div>
+
+                    <div class="link ">
+                        <a href="" class="card-link text-xs text-gray-300 relative after:absolute text-shadow-xs
+                        after:h-px after:w-full after:bg-gray-300  text-shadow-gray-500
+                        after:-bottom-1 after:left-0 group-hover:after:bg-[#711DB0] group-hover:text-[#711DB0] ">
+                            Browse Science
+                        </a>
+                    </div>
+                </div>
+                <!-- ?History & Culture card -->
+                <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
+                hover:bg-[#F78CA2] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                    <div class="card-heading font-bold text-lg">History & Culture</div>
+                    <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
+                        Local archives, world civilisations, art history, and cultural studies.
+                    </div>
+
+                    <div class="link ">
+                        <a href="" class="card-link text-xs text-gray-300 relative after:absolute text-shadow-xs
+                        after:h-px after:w-full after:bg-gray-300  text-shadow-gray-500
+                        after:-bottom-1 after:left-0 group-hover:after:bg-[#D80032] group-hover:text-[#D80032] ">
+                            Browse History
+                        </a>
+                    </div>
+                </div>
+                <!-- ?Periodicals & Newspapers card -->
+                <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
+                hover:bg-[#C5EBAA] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                    <div class="card-heading font-bold text-lg">Periodicals & Newspapers</div>
+                    <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
+                        Daily papers, weekly magazines, and curated journal subscriptions.
+                    </div>
+
+                    <div class="link ">
+                        <a href="" class="card-link text-xs text-gray-300 relative after:absolute text-shadow-xs
+                        after:h-px after:w-full after:bg-gray-300  text-shadow-gray-500
+                        after:-bottom-1 after:left-0 group-hover:after:bg-[#59AC77] group-hover:text-[#59AC77] ">
+                            Browse Periodicals
+                        </a>
+                    </div>
+                </div>
+                <!-- ?Digital Media Lab card -->
+                <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
+                hover:bg-[#B3C8CF] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                    <div class="card-heading font-bold text-lg">Digital Media Lab</div>
+                    <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
+                        Public computers, e-book access, and digital literacy resources.
+                    </div>
+
+                    <div class="link ">
+                        <a href="" class="card-link text-xs text-gray-300 relative after:absolute text-shadow-xs
+                        after:h-px after:w-full after:bg-gray-300  text-shadow-gray-500
+                        after:-bottom-1 after:left-0 group-hover:after:bg-[#526D82] group-hover:text-[#526D82] ">
+                            Browse Digital
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! Spaces section -->
+        <section id="spaces" class="our-spaces w-full">
+            <div class="section-name p-4 relative text-sm text-gray-400 after:absolute
+                           after:w-[calc(100%-2.5rem)] after:h-px after:bg-gray-600 after:left-5 after:bottom-0">
+                OUR SPACES
+            </div>
+
+            <div class="heading px-4 mt-8 flex justify-between items-center">
+                <h1 class="text-2xl">Inside the Library</h1>
+                <a href="#" class="view-btn text-sm border py-1 px-3 rounded-full
+                            hover:bg-white hover:text-black transition-all duration-200">
+                    View All
+                </a>
+            </div>
+
+            <!-- *Spaces gallary grid -->
+            <div class="gallary-grid grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
+                <!-- ? Reading Hall-->
+                <div id="reading" class="card group scroll-mt-25">
+                    <div class="img-container overflow-hidden rounded-lg shadow-md shadow-gray-900">
+                        <img src="./assets/gal1.jpg" alt="" class="w-full h-full transition-all 
+                        duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="location flex justify-between items-center py-2">
+                        <p class="name">Reading Hall</p>
+                        <p class="floor text-xs  border py-1 px-3 rounded-full text-gray-500
+                        cursor-pointer"> Main Floor</p>
+                    </div>
+                </div>
+                <!-- ? Fiction Collection -->
+                <div id="fiction" class="card group scroll-mt-25">
+                    <div class="img-container overflow-hidden rounded-lg shadow-md shadow-gray-900">
+                        <img src="./assets/gal2.jpg" alt="" class="w-full h-full transition-all 
+                        duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="location flex justify-between items-center py-2">
+                        <p class="name">Fiction Collection</p>
+                        <p class="floor text-xs  border py-1 px-3 rounded-full text-gray-500
+                        cursor-pointer">2nd Floor</p>
+                    </div>
+                </div>
+                <!-- ? History Hall-->
+                <div id="history" class="card group scroll-mt-25 ">
+                    <div class="img-container overflow-hidden rounded-lg shadow-md shadow-gray-900">
+                        <img src="./assets/gal3.jpg" alt="" class="w-full h-full transition-all 
+                        duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="location flex justify-between items-center py-2">
+                        <p class="name">History Hall</p>
+                        <p class="floor text-xs  border py-1 px-3 rounded-full text-gray-500
+                        cursor-pointer">Ground Floor</p>
+                    </div>
+                </div>
+                <!-- ? Archive Section-->
+                <div id="archive" class="card group scroll-mt-25">
+                    <div class="img-container overflow-hidden rounded-lg shadow-md shadow-gray-900">
+                        <img src="./assets/gal4.jpg" alt="" class="w-full h-full transition-all 
+                        duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="location flex justify-between items-center py-2">
+                        <p class="name">Archive Section</p>
+                        <p class="floor text-xs  border py-1 px-3 rounded-full text-gray-500
+                        cursor-pointer">Basement Floor</p>
                     </div>
                 </div>
 
 
             </div>
-        </div>
+        </section>
 
-        <div class=" w-full feature-section bg-gray-100 flex justify-center">
-            <div class="features-container w-full max-w-300   text-black p-2 flex flex-col gap-8 py-8">
-                <div class="feature-header  text-center font-bold text-2xl md:text-3xl">Powerful Features</div>
+        <!-- ! Values section -->
+        <section id="values" class="values w-full scroll-mt-25">
+            <div class="section-name relative p-4 text-sm text-gray-400 after:absolute
+               after:w-[calc(100%-2.5rem)] after:h-px after:bg-gray-600 after:left-5 after:bottom-0">
+                WHY GREENWOOD
+            </div>
+            <!-- *Bento grid container -->
+            <div class="bento-grid grid gap-4 grid-rows-6 grid-cols-1 p-4
+            sm:grid-cols-8 sm:grid-rows-2">
+                <!-- ? ABOUT card-->
+                <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#dee2ff] hover:bg-[#c4c9ff] text-black
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
+                sm:col-span-5 sm:p-4">
+                    <div class="card-name text-xs text-gray-400">ABOUT</div>
+                    <div class="card-desc text-xl sm:text-base">EMPOWERING COMMUNITY THROUGH KNOWLEDGE.</div>
+                </div>
+                <!-- ? COMMUNITY card-->
+                <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#f8ebf2] hover:bg-[#f3d7e7] text-black
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
+                sm:col-span-3 sm:p-4">
+                    <div class="card-name text-xs text-gray-400">COMMUNITY</div>
+                    <div class="card-desc text-xl sm:text-base">WELCOMING SPACE FOR ALL.</div>
+                </div>
+                <!-- ? 40+ YEARS- card-->
+                <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#f4eff1] hover:bg-[#ebdfe4] text-black
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
+                sm:col-span-2 sm:p-4">
+                    <div class="card-name text-xs text-gray-400">40+ YEARS</div>
+                    <div class="card-desc text-xl sm:text-base">DECADES OF PUBLIC TRUST.</div>
+                </div>
+                <!-- ? EVENTS card-->
+                <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#f3ebd2] hover:bg-[#e6d5a1] text-black
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
+                sm:col-span-2 sm:p-4">
+                    <div class="card-name text-xs text-gray-400">EVENTS</div>
+                    <div class="card-desc text-xl sm:text-base">STORYTIMES, CLUBS, AUTHOR TALKS.</div>
+                </div>
+                <!-- ? DIGITAL card-->
+                <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#f4edfa] hover:bg-[#e8daf4] text-black
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
+                sm:col-span-2 sm:p-4">
+                    <div class="card-name text-xs text-gray-400">DIGITAL</div>
+                    <div class="card-desc text-xl sm:text-base">EBOOKS, AUDIOBOOKS, 24/7 ACCESS.</div>
+                </div>
+                <!-- ? ACCESS card-->
+                <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#e8daf4] hover:bg-[#f7c3ff] text-black
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between 
+                sm:col-span-2 sm:p-4">
+                    <div class="card-name text-xs text-gray-400">ACCESS</div>
+                    <div class="card-desc text-xl sm:text-base">FREE TOOLS, RESEARCH, WIFI.</div>
+                </div>
+            </div>
+        </section>
 
-                <div class="cards-container grid grid-cols-1 gap-8 md:grid-cols-3">
-                    <div class="card bg-white p-4 rounded-md  flex flex-col gap-1 transition-all duration-300 ease-in-out
-                        shadow-xs shadow-gray-300 hover:shadow-md hover:shadow-gray-600 hover:-translate-y-1">
-                        <i class="fa-solid fa-bolt bg-[#B9D6F2]/50 text-red-500 p-2 rounded-md w-8 h-8"></i>
-                        <div class="card-header text-sm font-bold">Lightning Fast</div>
-                        <div class="card-desc text-xs">Optimized for speed and performance.</div>
+        <!-- ! About section -->
+        <section id="about" class="about max-w-200 my-8 w-full scroll-mt-25">
+            <h1 class="about-heading p-4 text-xl sm:text-3xl">More than a building full of books — a home for curious
+                minds.</h1>
+
+            <!-- *Newpaper columns -->
+            <div class="news-column p-4 sm:columns-2 ">
+                <div class="col1 text-sm sm:text-base pb-4">Greenwood Public Library has been at the heart of
+                    this community since 1983. We believe everyone deserves free access to
+                    knowledge, regardless of age, income, or background. Our six sections cover
+                    everything from fiction to digital media.</div>
+                <div class="col2 text-sm sm:text-base">Beyond books, we host weekly events — reading challenges
+                    for children, book clubs, digital literacy workshops, and
+                    author meets. Our study rooms, free Wi-Fi, and welcoming staff make Greenwood
+                    a place people come back to, year after
+                    year.</div>
+            </div>
+        </section>
+
+        <!-- ! Membership section -->
+        <section id="membership" class="membership w-full scroll-mt-25">
+            <div class="section-name p-4 relative text-sm text-gray-400 after:absolute
+            after:w-[calc(100%-2.5rem)] after:h-px after:bg-gray-600 after:left-5 after:bottom-0">
+                MEMBERSHIP
+            </div>
+
+            <h1 class="join px-4 mt-8 text-2xl ">Join the Library</h1>
+
+            <!-- *Plans Grid -->
+            <div class="plans-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-4 p-4">
+                <!-- ? Choose card -->
+                <div class="choose-card p-8 bg-[#d7ffdb] text-black rounded-md shadow-[0_0_2px_black]
+                flex flex-col gap-8  justify-between  shadow-gray-700 duration-300
+                hover:shadow-md hover:shadow-gray-900 transition-all hover:scale-101">
+                    <div class="card-content flex flex-col gap-4">
+                        <div class="card-name text-sm text-gray-500">CHOOSE A PLAN</div>
+                        <div class="card-heading text-2xl sm:text-4xl md:text-5xl lg:text-2xl">
+                            Everyone is welcome
+                            here.</div>
+                        <div class="card-text text-sm sm:text-lg md:text-xl lg:text-base text-gray-700">Membership
+                            unlocks borrowing,
+                            study
+                            rooms, and
+                            priority events.
+                        </div>
                     </div>
 
-                    <div class="card bg-white p-4 rounded-md flex flex-col gap-1 transition-all duration-300 ease-in-out
-                        shadow-xs shadow-gray-300 hover:shadow-md hover:shadow-gray-600 hover:-translate-y-1">
-                        <i class="fa-solid fa-lock bg-[#85FFD8]/50 text-yellow-500 p-2 rounded-md w-8 h-8"></i>
-                        <div class="card-header text-sm font-bold">Secure</div>
-                        <div class="card-desc text-xs">Enterprise grade security built in. </div>
+                    <div class="btn-container">
+                        <button class="card-btn text-sm border border-gray-900 py-2 px-4 
+                        rounded-full bg-gray-900 text-white shadow-sm shadow-gray-950">
+                            Learn More
+                        </button>
                     </div>
+                </div>
+                <!-- ? Basic card -->
+                <div class="plan-card group rounded-md overflow-hidden flex flex-col shadow-[0_0_2px_black]
+                border border-gray-500 hover:border-gray-300 hover:scale-101
+                hover:shadow-md hover:shadow-gray-900 transition-all duration-300">
+                    <div class="img-container">
+                        <img src="./assets/plan1.jpg" alt="basic tier plan" class="w-full h-full 
+                        brightness-95 group-hover:scale-105 transition-all duration-300">
+                    </div>
+                    <div class="details w-full flex flex-col gap-16 p-4 h-full justify-between">
+                        <div class="tier-desc flex flex-col gap-2">
+                            <div class="tier font-bold">Basic</div>
+                            <div class="price">Free</div>
+                            <div class="plan-details text-sm text-gray-400">3 books · Reading rooms · Wi-Fi</div>
+                        </div>
+                        <button class="join-btn w-full py-2 border text-center rounded-full
+                        hover:border-gray-900 hover:bg-gray-900 transition-all duration-300 
+                        shadow-sm shadow-gray-950 active:scale-90">
+                            Join Free
+                        </button>
+                    </div>
+                </div>
+                <!-- ? Student card -->
+                <div class="plan-card relative group rounded-md overflow-hidden flex flex-col shadow-[0_0_2px_black]
+                border border-gray-500  hover:border-gray-300 hover:scale-101
+                hover:shadow-md hover:shadow-gray-900 transition-all duration-300">
+                    <div class="img-container">
+                        <img src="./assets/plan2.jpg" alt="basic tier plan" class="w-full h-full 
+                        brightness-95 group-hover:scale-105 transition-all duration-300">
+                    </div>
+                    <div class="details w-full flex flex-col gap-16 p-4 h-full justify-between">
+                        <div class="tier-desc flex flex-col gap-2">
+                            <div class="tier font-bold">Student</div>
+                            <div class="price">₹200/yr</div>
+                            <div class="plan-details text-sm text-gray-400">
+                                8 books · Digital catalogue · Study rooms</div>
+                        </div>
+                        <button class="join-btn w-full py-2 border text-center rounded-full
+                        bg-gray-900 border-gray-900 shadow-sm shadow-gray-950 active:scale-90
+                        transition-all duration-300">
+                            Join Now
+                        </button>
+                    </div>
+                    <p class="pop absolute bg-gray-900/90 py-1 px-3 rounded-full text-xs top-2 right-2 ">popular</p>
+                </div>
+                <!-- ? Family card -->
+                <div class="plan-card group rounded-md overflow-hidden flex flex-col shadow-[0_0_2px_black]
+                border border-gray-500  hover:border-gray-300 hover:scale-101
+                hover:shadow-md hover:shadow-gray-900 transition-all duration-300">
+                    <div class="img-container">
+                        <img src="./assets/plan3.jpg" alt="basic tier plan" class="w-full h-full 
+                        brightness-95 group-hover:scale-105 transition-all duration-300">
+                    </div>
+                    <div class="details w-full flex flex-col gap-16 p-4 h-full justify-between">
+                        <div class="tier-desc flex flex-col gap-2">
+                            <div class="tier font-bold">Family</div>
+                            <div class="price">₹500/yr</div>
+                            <div class="plan-details text-sm text-gray-400">
+                                15 books · All benefits · Priority events</div>
+                        </div>
+                        <button class="join-btn w-full py-2 border text-center rounded-full
+                        hover:border-gray-900 hover:bg-gray-900 transition-all duration-300 
+                        shadow-sm shadow-gray-950 active:scale-90">
+                            Join Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="card bg-white p-4 rounded-md flex flex-col gap-1 transition-all duration-300 ease-in-out
-                        shadow-xs shadow-gray-300 hover:shadow-md hover:shadow-gray-600 hover:-translate-y-1">
-                        <i class="fa-solid fa-chart-line bg-[#DE85FF]/50 text-blue-500 p-2 rounded-md w-8 h-8"></i>
-                        <div class="card-header text-sm font-bold">Analytics</div>
-                        <div class="card-desc text-xs">Real time insights and reports.</div>
+        <!-- ! Testimonial section -->
+        <section id="testimonial" class="testimonial max-w-200 my-12 w-full  px-4 scroll-mt-25   flex justify-center">
+            <div class="tetimonial-container  border-t border-gray-500 flex flex-col gap-4 sm:flex-row smgap-8 py-8">
+                <div class="profile flex items-start sm:justify-center">
+                    <img src="./assets/profile.jpg" alt="profile image" class="w-16 h-16 shrink-0 rounded-full
+                    grayscale hover:grayscale-0 transition-all duration-500">
+                </div>
+                <div class="review flex flex-col gap-4">
+                    <p class="speech ">"Greenwood has been my second home for fifteen years — it's where I learned to
+                        love
+                        reading."</p>
+                    <p class="name text-gray-400 text-sm">— Meera Desai, volunteer at the children's section</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! Contact section -->
+        <section id="contact" class="contact w-full p-4 scroll-mt-25">
+            <div class="contact-container p-8 text-gray-600 bg-[#ede8ff] flex flex-col gap-6 rounded-md items-start
+            shadow-[0_0_2px_black]">
+
+                <div class="sec-head  text-gray-400 text-sm">CONTACT</div>
+                <!-- *Address container -->
+                <div class="address  flex flex-col gap-2">
+                    <h1 class="text-2xl">Visit us at 42 Elm Street, Greenwood.</h1>
+                    <div class="timings flex flex-col gap-2 sm:flex-row sm:gap-4">
+                        <p class="text-sm">Mon–Fri: 8am–7pm</p>
+                        <p class="text-sm">Sat: 9am–5pm</p>
+                        <p class="text-sm">Sun: Closed</p>
                     </div>
+                </div>
+
+                <div class="btn-container">
+                    <a href="" class="btn  text-sm bg-gray-900 border border-gray-900 py-1 px-4 text-white 
+                    rounded-full hover:opacity-90">
+                        Get Directions
+                    </a>
+                </div>
+
+                <div class="num-mail flex gap-2">
+                    <p class="text-xs">(555) 012-3456</p>
+                    <a href="mailto:hello@greenwoodlibrary.org" class="text-xs">
+                        ● hello@greenwoodlibrary.org</a>
                 </div>
 
             </div>
-        </div>
+        </section>
 
-        <div class="footer bg-[#264054] flex justify-center">
-            <div class=" w-full footer-container max-w-300 px-2 py-8 flex 
-                flex-col items-center gap-2 sm:flex-row sm:justify-between">
-                <div class="logo-container flex items-center gap-2 font-bold text-sm">
-                    <i class="fa-solid fa-rocket text-red-500 "></i>
-                    AppName
+        <!-- ! Event section -->
+        <section id="event" class="events w-full scroll-mt-25">
+            <div class="section-name p-4 relative text-sm text-gray-400 after:absolute
+                        after:w-[calc(100%-2.5rem)] after:h-px after:bg-gray-600 after:left-5 after:bottom-0">
+                EVENTS
+            </div>
+
+            <h1 class="join px-4 mt-8 text-2xl">What's Coming Up</h1>
+
+            <!-- *Event section  grid -->
+            <div class="events-grid grid gap-4 p-4 sm:grid-cols-2 md:grid-cols-4">
+                <!-- ?Reading challenge event -->
+                <div class="event group gap-4 flex flex-col ">
+                    <div class="img-container  overflow-hidden rounded-lg shadow-[0_0_2px_black] shrink-0">
+                        <img src="./assets/event1.jpg" alt="reading challenge poster"
+                            class="w-full h-full group-hover:scale-105  transition-all duration-300">
+                    </div>
+                    <div class="event-text flex flex-col gap-2 h-full justify-between ">
+                        <h2 class="event-title text-sm">Summer Reading Challenge — open to children aged 6–14</h2>
+                        <p class="event-date text-xs text-gray-500">5 Aug 2026</p>
+                    </div>
                 </div>
-                <div class="copyright text-center text-xs">
-                    2026 AppName. All rights reserved.
+
+                <!-- ?Book club disscussion event -->
+                <div class="event group flex flex-col gap-4">
+                    <div class="img-container  overflow-hidden rounded-lg shadow-[0_0_2px_black] shrink-0">
+                        <img src="./assets/event2.jpg" alt="reading challenge poster "
+                            class="w-full h-full group-hover:scale-105  transition-all duration-300 ">
+                    </div>
+                    <div class="event-text flex flex-col gap-2 h-full justify-between">
+                        <h2 class="event-title text-sm">Discussing The God of Small Things</h2>
+                        <p class="event-date text-xs text-gray-500">10 Aug 2026</p>
+                    </div>
+                </div>
+
+                <!-- ?Digital literacy event -->
+                <div class="event group flex flex-col gap-4">
+                    <div class="img-container  overflow-hidden rounded-lg shadow-[0_0_2px_black] shrink-0">
+                        <img src="./assets/event3.jpg" alt="reading challenge poster"
+                            class="w-full h-full group-hover:scale-105  transition-all duration-300 ">
+                    </div>
+                    <div class="event-text flex flex-col gap-2 h-full justify-between">
+                        <h2 class="event-title text-sm">Digital Literacy Workshop — free, no registration needed</h2>
+                        <p class="event-date text-xs text-gray-500">18 Aug 2026</p>
+                    </div>
+                </div>
+
+                <!-- ?Book signing event -->
+                <div class="event group  flex flex-col gap-4">
+                    <div class="img-container  overflow-hidden rounded-lg shadow-[0_0_2px_black] shrink-0">
+                        <img src="./assets/event4.jpg" alt="reading challenge poster"
+                            class="w-full h-full group-hover:scale-105  transition-all duration-300 ">
+                    </div>
+                    <div class="event-text flex flex-col gap-2 h-full justify-between">
+                        <h2 class="event-title text-sm">Priya Sharma — Q&A and book signing</h2>
+                        <p class="event-date text-xs text-gray-500">25 Aug 2026</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- ! Footer section -->
+        <section id="footer" class="footer w-full scroll-mt-25">
+
+            <!-- *Footer grid container -->
+            <div class="footer-grid p-4 grid gap-4  grid-rows-7 grid-cols-2 sm:grid-cols-2 sm:grid-rows-2
+            md:grid-cols-4 md:grid-rows-1">
+
+                <!-- ? Logo and icons -->
+                <div class="logo-card flex flex-col gap-2 col-span-2 sm:col-span-1 sm:row-span-1 ">
+                    <h2 class="font-bold py-2 ">Greenwood</h2>
+                    <div class="brand-flex flex gap-3 sm:text-xl">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+
+                <!-- ? Pages -->
+                <div class="footer-card col-span-1 row-span-3 sm:col-span-1 sm:row-span-1">
+                    <h3 class="foot-head  text-sm font-bold relative py-2 after:absolute 
+                    after:h-px after:w-full after:bg-gray-700 after:bottom-0 after:left-0 ">Pages</h3>
+
+                    <!-- ?Footer links -->
+                    <div class="links flex flex-col gap-2 py-2 items-start">
+                        <a href="#home" class="link text-xs relative py-1 after:transition-all after:duration-300 text-gray-400
+                        after:ease-in-out after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66] 
+                        hover:after:w-full hover:text-gray-200 transition-all duration-300">Home</a>
+
+                        <a href="#sections" class="link text-xs relative py-1 after:transition-all after:duration-300 after:ease-in-out
+                        after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66]  text-gray-400
+                        hover:after:w-full hover:text-gray-200 transition-all duration-300">Sections</a>
+
+                        <a href="#membership" class="link text-xs relative py-1 after:transition-all after:duration-300 after:ease-in-out
+                        after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66]  text-gray-400
+                        hover:after:w-full hover:text-gray-200  transition-all duration-300">Membership</a>
+
+                        <a href="#event" class="link text-xs relative py-1 after:transition-all after:duration-300 after:ease-in-out
+                        after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66]  text-gray-400 
+                        hover:after:w-full hover:text-gray-200 transition-all duration-300">Events</a>
+
+                        <a href="#contact" class="link text-xs relative py-1 after:transition-all after:duration-300 after:ease-in-out
+                        after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66]  text-gray-400
+                        hover:after:w-full hover:text-gray-200 transition-all duration-300">Contacts</a>
+                    </div>
+                </div>
+
+                <!-- ? Sections -->
+                <div class="footer-card col-span-1 row-span-3 sm:col-span-1 sm:row-span-1">
+                    <h3 class="foot-head  text-sm font-bold relative py-2 after:absolute
+                    after:h-px after:w-full after:bg-gray-700 after:bottom-0 after:left-0">Sections</h3>
+
+                    <!-- ?Footer links -->
+                    <div class="links flex flex-col gap-2 py-2 items-start">
+                        <a href="#reading" class="link text-xs py-1  relative after:transition-all after:duration-300 text-gray-400
+                        after:ease-in-out after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66] 
+                        hover:after:w-full hover:text-gray-200 transition-all duration-300">Reading</a>
+
+                        <a href="#fiction" class="link text-xs relative py-1 after:transition-all after:duration-300 after:ease-in-out
+                        after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66]  text-gray-400
+                        hover:after:w-full hover:text-gray-200 transition-all duration-300">Fictions</a>
+
+                        <a href="#history" class="link text-xs relative py-1 after:transition-all after:duration-300 after:ease-in-out
+                        after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66]  text-gray-400
+                        hover:after:w-full hover:text-gray-200 transition-all duration-300">History</a>
+
+                        <a href="#archive" class="link text-xs relative py-1 after:transition-all after:duration-300 after:ease-in-out
+                        after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66]  text-gray-400 
+                        hover:after:w-full hover:text-gray-200 transition-all duration-300">Archive</a>
+                    </div>
+                </div>
+
+                <!-- ? Details -->
+                <div class="detail-card col-span-1 row-span-3 sm:col-span-1 sm:row-span-1">
+                    <h3 class="foot-head  text-sm font-bold relative py-2 after:absolute
+                     after:h-px after:w-full after:bg-gray-700 after:bottom-0 after:left-0">
+                        Details
+                    </h3>
+
+                    <div class="address flex flex-col gap-2 py-2 items-start">
+                        <p class="text-xs py-1 text-gray-400">42 Elm Street</p>
+                        <p class="text-xs py-1 text-gray-400">(555) 012-3456</p>
+                        <a href="mailto:hello@greenwoodlibrary.org" class="text-xs py-1 relative after:transition-all after:duration-300 text-gray-400
+                        after:ease-in-out after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#f4cb66] 
+                        hover:after:w-full hover:text-gray-200 transition-all duration-300">
+                            hello@greenwoodlibrary.org</a>
+                        <p class="text-xs py-1 text-gray-400">Mon–Fri 8am–7pm</p>
+                        <p class="text-xs py-1 text-gray-400">Sat 9am–5pm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! Copyright section -->
+        <section class="copyright w-full p-4 relative text-sm text-gray-400 after:absolute
+                        after:w-[calc(100%-2.5rem)] after:h-px after:bg-gray-600 after:left-5 after:top-0">
+
+            <div class="copyright-container flex flex-col gap-4 items-center sm:flex-row 
+            sm:justify-center sm:items-center">
+                <div class="copyright-line text-sm flex gap-2 items-center">
+                    <i class="fa-regular fa-copyright"></i>
+                    <p class="text">2026 Greenwood Public Library</p>
+                </div>
+
+                <div class="links  flex justify-center gap-2">
+                    <a href="#" class="text-xs">Privacy</a>
+                    <a href="#" class="text-xs">Terms</a>
+                </div>
+            </div>
+
+        </section>
     </main>
-
 </body>
 
 </html>
