@@ -25,5 +25,6 @@ Click the link below to see the live deployement
 4. Download Better comments extensions to see different coloured comments
 5. open the "index.html" file and run the live server located at the bottom right on your Screen.
 
-<!-- completed all instructions check task instructions -->
-<!-- no ai used (researched everything) -->
+<!-- ! this is task 23 of the course and its Greenwood Library Website which is inside tailwind mini project can you please check your own course -->
+<!-- !Also theres is no Ai i learned it because your course didnt even provide the things you wrote in your feedback  -->
+<!-- ! and also stop using ai to check and atleast check what project it is  -->
