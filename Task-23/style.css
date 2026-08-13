@@ -21,3 +21,105 @@
   --silver: #b3c8cf;
   --silver-dark: #526d82;
 }
+/* !Custom animations as tailwind v4 doesnt support config.js */
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes float-up {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.3rem);
+  }
+}
+@keyframes float-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.3rem);
+  }
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes img-anim {
+  /* *normal  */
+  0%,
+  100% {
+    transform: scale(1) translateX(0) translateY(0);
+  }
+  /* *Zoom in and move top left */
+  20% {
+    transform: scale(2) translateX(15%) translateY(15%);
+  }
+  /* *move bottom right */
+  40% {
+    transform: scale(2) translate(-15%, -15%);
+  }
+  /* *move top right with little zoom out*/
+  60% {
+    transform: scale(1.5) translate(-15%, 15%);
+  }
+  /* *move bottom left */
+  80% {
+    transform: scale(2) translate(15%, -15%);
+  }
+}
+@keyframes border-anim {
+  0% {
+    box-shadow: 0 0 8px rgb(254, 115, 115);
+  }
+  25% {
+    box-shadow: 0 0 8px rgb(255, 192, 92);
+  }
+  50% {
+    box-shadow: 0 0 8px rgb(159, 255, 94);
+  }
+  75% {
+    box-shadow: 0 0 8px rgb(86, 249, 255);
+  }
+  100% {
+    box-shadow: 0 0 8px rgb(164, 84, 249);
+  }
+}
+
+/* !====================================================================! */
+
+@layer utilities {
+  .animate-slide-in {
+    animation: slide-in 1.5s ease forwards;
+  }
+  .animate-float-up {
+    animation: float-up 2s ease-in-out infinite;
+  }
+  .animate-float-down {
+    animation: float-down 2s ease-in-out infinite;
+  }
+  .animate-slide-down {
+    animation: slide-down 1s ease;
+  }
+  .animate-img-anim {
+    animation: img-anim 15s ease-in-out infinite;
+  }
+  .animate-border-anim {
+    animation: border-anim 1s ease-in-out infinite alternate;
+  }
+}

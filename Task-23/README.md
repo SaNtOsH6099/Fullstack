@@ -15,6 +15,7 @@ Click the link below to see the live deployement
 - hidden navbar on mobile screens.
 - Responsive layouts.
 - Same page navigation links.
+- custom animation
 
 # How to run
 
@@ -23,3 +24,6 @@ Click the link below to see the live deployement
 3. Download Live Server extension.
 4. Download Better comments extensions to see different coloured comments
 5. open the "index.html" file and run the live server located at the bottom right on your Screen.
+
+<!-- completed all instructions check task instructions -->
+<!-- no ai used (researched everything) -->

@@ -4,24 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tailwind cdn  -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Greenwood Library Website</title>
+
     <!-- link to font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Greenwood Library Website</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="relative bg-[#1D2635] text-white flex flex-col items-center font-['Montserrat']">
+<body class="relative bg-[#1D2635] text-white flex flex-col items-center font-['Montserrat'] overflow-x-hidden">
 
     <!-- ! Navbar section -->
-    <header class="w-full border-b border-gray-600 flex justify-center sticky z-10 top-0  backdrop-blur-md">
+    <header class="w-full border-b border-gray-600 flex justify-center sticky z-10 top-0 bg-white/5  backdrop-blur-md 
+        animate-slide-down ">
         <nav class="max-w-300 w-full flex justify-between items-center p-4">
             <!-- *  Navbar logo-->
             <div class="nav-logo flex gap-3 items-center p-1">
                 <h3 class="logo-name font-bold [text-shadow:0_0_2px_black]">Greenwood</h3>
                 <div class="open-btn hidden sm:block text-xs font-bold py-1 px-2 rounded-lg
-                 bg-[#6bd6a9] text-[#165862]">Open Sat</div>
+                 bg-[#6bd6a9] text-[#165862] animate-pulse">Open Sat</div>
             </div>
 
             <!-- * Navbar links -->
@@ -67,7 +72,7 @@
 
             <div class="hero-section grid grid-rows-2 gap-8 lg:gap-12 p-4 md:grid-cols-2 md:grid-rows-1">
                 <!-- * hero text content -->
-                <div class="half flex flex-col gap-8 justify-center md:gap-4 lg:gap-8">
+                <div class="half flex flex-col gap-8 justify-center md:gap-4 lg:gap-8 animate-slide-down">
                     <h1 class="hero-heading text-4xl font-light 
                     sm:text-6xl md:text-4xl lg:text-5xl">Your Neighbourhood
                         Library.
@@ -84,26 +89,30 @@
                 </div>
 
                 <!-- * hero image -->
-                <div class="half overflow-hidden rounded-2xl shadow-[0_0_2px_black]">
+                <div class="half overflow-hidden rounded-2xl shadow-[0_0_2px_black] animate-slide-in">
                     <img src="./assets/hero-img.jpg" alt="library image"
-                        class="w-full h-full hover:scale-105 transition-all duration-200">
+                        class="w-full h-full hover:scale-105 transition-all duration-200 ">
                 </div>
             </div>
 
             <div class="stats-grid grid grid-cols-2 gap-4 p-4 md:grid-cols-4">
-                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]">
+                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black] 
+                animate-float-up">
                     <div class="stat-header font-bold text-xl">12,000+</div>
                     <div class="stat-desc text-sm text-gray-300">Books & journals</div>
                 </div>
-                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]">
+                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]
+                  animate-float-down">
                     <div class="stat-header font-bold text-xl">40+</div>
                     <div class="stat-desc text-sm text-gray-300">Years of service</div>
                 </div>
-                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]">
+                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]
+                  animate-float-up ">
                     <div class="stat-header font-bold text-xl text-[#86EB68]">Free</div>
                     <div class="stat-desc text-sm text-gray-300">Wi-Fi & basic access</div>
                 </div>
-                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]">
+                <div class="stat bg-[#2b384f] p-2 rounded-md shadow-[0_0_2px_black]
+                animate-float-down  ">
                     <div class="stat-header font-bold text-xl ">6</div>
                     <div class="stat-desc text-sm text-gray-300">Dedicated sections</div>
                 </div>
@@ -121,7 +130,8 @@
             <div class="section-grid p-4 grid gap-4 md:grid-cols-2">
                 <!-- ?Fiction & Literature card -->
                 <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
-                hover:bg-[#F9E8A2] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                hover:bg-[#F9E8A2] hover:text-gray-800 transition-all duration-300 ease-in-out hover:rotate-2
+                    hover:scale-103 ">
                     <div class="card-heading font-bold text-lg">Fiction & Literature</div>
                     <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
                         Novels, short stories, and poetry — from timeless classics to new voices.
@@ -137,7 +147,8 @@
                 </div>
                 <!-- ?Children's Corner card -->
                 <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
-                hover:bg-[#97DDE9] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                hover:bg-[#97DDE9] hover:text-gray-800 transition-all duration-300 ease-in-out hover:-rotate-2 
+                 hover:scale-103 ">
                     <div class="card-heading font-bold text-lg">Children's Corner</div>
                     <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
                         Picture books, early readers, and a cozy space for young learners.
@@ -153,7 +164,8 @@
                 </div>
                 <!-- ?Science & Technology card -->
                 <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
-                hover:bg-[#DCBFFF] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                hover:bg-[#DCBFFF] hover:text-gray-800 transition-all duration-300 ease-in-out hover:-rotate-2
+                 hover:scale-103 ">
                     <div class="card-heading font-bold text-lg">Science & Technology</div>
                     <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
                         Research journals, textbooks, and STEM reference materials.
@@ -169,7 +181,8 @@
                 </div>
                 <!-- ?History & Culture card -->
                 <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
-                hover:bg-[#F78CA2] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                hover:bg-[#F78CA2] hover:text-gray-800 transition-all duration-300 ease-in-out hover:rotate-2
+                 hover:scale-103 ">
                     <div class="card-heading font-bold text-lg">History & Culture</div>
                     <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
                         Local archives, world civilisations, art history, and cultural studies.
@@ -185,7 +198,8 @@
                 </div>
                 <!-- ?Periodicals & Newspapers card -->
                 <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
-                hover:bg-[#C5EBAA] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                hover:bg-[#C5EBAA] hover:text-gray-800 transition-all duration-300 ease-in-out hover:rotate-2
+                 hover:scale-103 ">
                     <div class="card-heading font-bold text-lg">Periodicals & Newspapers</div>
                     <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
                         Daily papers, weekly magazines, and curated journal subscriptions.
@@ -201,7 +215,8 @@
                 </div>
                 <!-- ?Digital Media Lab card -->
                 <div class="card group bg-[#2b384f] p-6 rounded-md flex flex-col gap-4 shadow-sm shadow-gray-900
-                hover:bg-[#B3C8CF] hover:text-gray-800 transition-all duration-200 ease-in-out">
+                hover:bg-[#B3C8CF] hover:text-gray-800 transition-all duration-300 ease-in-out hover:-rotate-2
+                 hover:scale-103 ">
                     <div class="card-heading font-bold text-lg">Digital Media Lab</div>
                     <div class="card-desc text-gray-200 group-hover:text-gray-800 text-sm">
                         Public computers, e-book access, and digital literacy resources.
@@ -239,7 +254,7 @@
                 <div id="reading" class="card group scroll-mt-25">
                     <div class="img-container overflow-hidden rounded-lg shadow-md shadow-gray-900">
                         <img src="./assets/gal1.jpg" alt="" class="w-full h-full transition-all 
-                        duration-300 group-hover:scale-105">
+                        duration-300 group-hover:scale-105 animate-img-anim">
                     </div>
                     <div class="location flex justify-between items-center py-2">
                         <p class="name">Reading Hall</p>
@@ -251,7 +266,7 @@
                 <div id="fiction" class="card group scroll-mt-25">
                     <div class="img-container overflow-hidden rounded-lg shadow-md shadow-gray-900">
                         <img src="./assets/gal2.jpg" alt="" class="w-full h-full transition-all 
-                        duration-300 group-hover:scale-105">
+                        duration-300 group-hover:scale-105 animate-img-anim">
                     </div>
                     <div class="location flex justify-between items-center py-2">
                         <p class="name">Fiction Collection</p>
@@ -263,7 +278,7 @@
                 <div id="history" class="card group scroll-mt-25 ">
                     <div class="img-container overflow-hidden rounded-lg shadow-md shadow-gray-900">
                         <img src="./assets/gal3.jpg" alt="" class="w-full h-full transition-all 
-                        duration-300 group-hover:scale-105">
+                        duration-300 group-hover:scale-105 animate-img-anim">
                     </div>
                     <div class="location flex justify-between items-center py-2">
                         <p class="name">History Hall</p>
@@ -275,7 +290,7 @@
                 <div id="archive" class="card group scroll-mt-25">
                     <div class="img-container overflow-hidden rounded-lg shadow-md shadow-gray-900">
                         <img src="./assets/gal4.jpg" alt="" class="w-full h-full transition-all 
-                        duration-300 group-hover:scale-105">
+                        duration-300 group-hover:scale-105 animate-img-anim">
                     </div>
                     <div class="location flex justify-between items-center py-2">
                         <p class="name">Archive Section</p>
@@ -297,47 +312,55 @@
             <!-- *Bento grid container -->
             <div class="bento-grid grid gap-4 grid-rows-6 grid-cols-1 p-4
             sm:grid-cols-8 sm:grid-rows-2">
+
                 <!-- ? ABOUT card-->
-                <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#dee2ff] hover:bg-[#c4c9ff] text-black
-                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
-                sm:col-span-5 sm:p-4">
+                <div class="card p-8 rounded-md  bg-[#dee2ff] hover:bg-[#c4c9ff] text-black
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between 
+                sm:col-span-5 sm:p-4 animate-border-anim ">
                     <div class="card-name text-xs text-gray-400">ABOUT</div>
-                    <div class="card-desc text-xl sm:text-base">EMPOWERING COMMUNITY THROUGH KNOWLEDGE.</div>
+                    <div class="card-desc text-xl sm:text-base lg:text-xl">EMPOWERING COMMUNITY THROUGH KNOWLEDGE.
+                    </div>
+
                 </div>
+
                 <!-- ? COMMUNITY card-->
-                <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#f8ebf2] hover:bg-[#f3d7e7] text-black
-                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
-                sm:col-span-3 sm:p-4">
+                <div class="card  p-8 rounded-md shadow-[0_0_2px_black] bg-[#f8ebf2] hover:bg-[#f3d7e7] text-black
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between  relative
+                sm:col-span-3 sm:p-4  animate-border-anim">
                     <div class="card-name text-xs text-gray-400">COMMUNITY</div>
-                    <div class="card-desc text-xl sm:text-base">WELCOMING SPACE FOR ALL.</div>
+                    <div class="card-desc text-xl sm:text-base lg:text-xl">WELCOMING SPACE FOR ALL.</div>
                 </div>
+
                 <!-- ? 40+ YEARS- card-->
                 <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#f4eff1] hover:bg-[#ebdfe4] text-black
-                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
-                sm:col-span-2 sm:p-4">
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between relative
+                sm:col-span-2 sm:p-4  animate-border-anim">
                     <div class="card-name text-xs text-gray-400">40+ YEARS</div>
-                    <div class="card-desc text-xl sm:text-base">DECADES OF PUBLIC TRUST.</div>
+                    <div class="card-desc text-xl sm:text-base lg:text-xl">DECADES OF PUBLIC TRUST.</div>
                 </div>
+
                 <!-- ? EVENTS card-->
                 <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#f3ebd2] hover:bg-[#e6d5a1] text-black
-                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
-                sm:col-span-2 sm:p-4">
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between relative
+                sm:col-span-2 sm:p-4  animate-border-anim">
                     <div class="card-name text-xs text-gray-400">EVENTS</div>
-                    <div class="card-desc text-xl sm:text-base">STORYTIMES, CLUBS, AUTHOR TALKS.</div>
+                    <div class="card-desc text-xl sm:text-base lg:text-xl">STORYTIMES, CLUBS, AUTHOR TALKS.</div>
                 </div>
+
                 <!-- ? DIGITAL card-->
                 <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#f4edfa] hover:bg-[#e8daf4] text-black
-                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between
-                sm:col-span-2 sm:p-4">
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between relative
+                sm:col-span-2 sm:p-4  animate-border-anim">
                     <div class="card-name text-xs text-gray-400">DIGITAL</div>
-                    <div class="card-desc text-xl sm:text-base">EBOOKS, AUDIOBOOKS, 24/7 ACCESS.</div>
+                    <div class="card-desc text-xl sm:text-base lg:text-xl">EBOOKS, AUDIOBOOKS, 24/7 ACCESS.</div>
                 </div>
+
                 <!-- ? ACCESS card-->
                 <div class="card p-8 rounded-md shadow-[0_0_2px_black] bg-[#e8daf4] hover:bg-[#f7c3ff] text-black
-                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between 
-                sm:col-span-2 sm:p-4">
+                flex flex-col gap-8 md:gap-16 lg:gap-24 lg:p-8 justify-between  relative
+                sm:col-span-2 sm:p-4  animate-border-anim">
                     <div class="card-name text-xs text-gray-400">ACCESS</div>
-                    <div class="card-desc text-xl sm:text-base">FREE TOOLS, RESEARCH, WIFI.</div>
+                    <div class="card-desc text-xl sm:text-base lg:text-xl">FREE TOOLS, RESEARCH, WIFI.</div>
                 </div>
             </div>
         </section>
@@ -484,7 +507,7 @@
         <!-- ! Contact section -->
         <section id="contact" class="contact w-full p-4 scroll-mt-25">
             <div class="contact-container p-8 text-gray-600 bg-[#ede8ff] flex flex-col gap-6 rounded-md items-start
-            shadow-[0_0_2px_black]">
+            shadow-[0_0_2px_black] animate-border-anim">
 
                 <div class="sec-head  text-gray-400 text-sm">CONTACT</div>
                 <!-- *Address container -->
