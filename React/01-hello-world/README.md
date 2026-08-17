@@ -2,6 +2,10 @@
 
 A basic Hello World React application built with React and Vite.
 
+## Live deployment here :
+
+[ https://santosh6099.github.io/Fullstack/React/01-hello-world/](https://santosh6099.github.io/Fullstack/React/01-hello-world/)
+
 ## Prerequisites
 
 - Node.js (v14 or higher)
