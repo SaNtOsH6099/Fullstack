@@ -1,6 +1,6 @@
-# ReactJS - Hello World
+# ReactJS - Hooks
 
-A basic Hello World React application built with React and Vite.
+Hooks in react
 
 ## Live deployment here :
 
