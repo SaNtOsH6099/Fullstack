@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body {
+        background-color: #111827;
+        color: white;
+}
+@theme {
+        --animate-gradient: gradient 3s linear infinite;
+
+        /* * the container movese right and left */
+        @keyframes gradient {
+                0%,
+                100% {
+                        background-position: 0% 50%;
+                }
+
+                50% {
+                        background-position: 100% 50%;
+                }
+        }
+}
