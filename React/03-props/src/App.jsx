@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+
 import { useState } from "react";
 import Card from "./components/Card";
 
@@ -95,6 +95,7 @@ const App = () => {
                         description: "Description for the fifteenth image.",
                 },
         ];
+        // eslint-disable-next-line no-unused-vars
         const [cardData, setCardData] = useState(data);
 
         return (
