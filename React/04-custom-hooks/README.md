@@ -1,16 +1,18 @@
-# ReactJS - Props
+# (ReactJS) Custom Hooks
 
-Props in react
+(ReactJS) Custom Hooks
 
 ## Live deployment here :
 
-[ https://santosh6099.github.io/Fullstack/React/03-props/](https://santosh6099.github.io/Fullstack/React/03-props/)
+[ https://santosh6099.github.io/Fullstack/React/04-custom-hooks/](https://santosh6099.github.io/Fullstack/React/04-custom-hooks/)
 
 ## Features
 
 - Proper comments
 - Renders cards with data from props
-- animated gradient border
+- fetches data from api
+- handles errors
+- loading status until promise is successfull
 
 ## Prerequisites
 
