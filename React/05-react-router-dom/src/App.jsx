@@ -7,7 +7,7 @@ import Login from "./components/Login";
 
 const App = () => {
   return (
-    <div className=" border border-amber-300 min-h-screen flex flex-col justify-between">
+    <div className=" min-h-screen flex flex-col justify-between">
       {/* BrowserRouter enables routing */}
       <BrowserRouter >
         <div className="nav-container bg-[#030712]">
