@@ -4,15 +4,12 @@
 
 ## Live deployment here :
 
-[ https://santosh6099.github.io/Fullstack/React/04-custom-hooks/](https://santosh6099.github.io/Fullstack/React/04-custom-hooks/)
+[ https://santosh6099.github.io/Fullstack/React/05-react-router-dom/](https://santosh6099.github.io/Fullstack/React/05-react-router-dom/)
 
 ## Features
 
 - Proper comments
-- Renders cards with data from props
-- fetches data from api
-- handles errors
-- loading status until promise is successfull
+- react router components.
 
 ## Prerequisites
 
